@@ -10,6 +10,10 @@
 		B4481809171089D20054926B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4481808171089D20054926B /* Foundation.framework */; };
 		B448180C171089D20054926B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B448180B171089D20054926B /* main.m */; };
 		B4481810171089D20054926B /* MittSchema.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B448180F171089D20054926B /* MittSchema.1 */; };
+		B448182417108FDF0054926B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B448182317108FDF0054926B /* Student.m */; };
+		B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B957D61712DDAE00ACA1D4 /* Course.m */; };
+		B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E375FD1713FD3C0010ED97 /* StudentService.m */; };
+		B4E37601171421B70010ED97 /* Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E37600171421B70010ED97 /* Scheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,14 @@
 		B448180B171089D20054926B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B448180E171089D20054926B /* MittSchema-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MittSchema-Prefix.pch"; sourceTree = "<group>"; };
 		B448180F171089D20054926B /* MittSchema.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MittSchema.1; sourceTree = "<group>"; };
+		B448182217108FDF0054926B /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B448182317108FDF0054926B /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B4B957D51712DDAE00ACA1D4 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		B4B957D61712DDAE00ACA1D4 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		B4E375FC1713FD3C0010ED97 /* StudentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentService.h; sourceTree = "<group>"; };
+		B4E375FD1713FD3C0010ED97 /* StudentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentService.m; sourceTree = "<group>"; };
+		B4E375FF171421B70010ED97 /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
+		B4E37600171421B70010ED97 /* Scheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 				B448180A171089D20054926B /* MittSchema */,
 				B4481807171089D20054926B /* Frameworks */,
 				B4481806171089D20054926B /* Products */,
+				B448180D171089D20054926B /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,8 +87,14 @@
 			isa = PBXGroup;
 			children = (
 				B448180B171089D20054926B /* main.m */,
-				B448180F171089D20054926B /* MittSchema.1 */,
-				B448180D171089D20054926B /* Supporting Files */,
+				B448182217108FDF0054926B /* Student.h */,
+				B448182317108FDF0054926B /* Student.m */,
+				B4B957D51712DDAE00ACA1D4 /* Course.h */,
+				B4B957D61712DDAE00ACA1D4 /* Course.m */,
+				B4E375FC1713FD3C0010ED97 /* StudentService.h */,
+				B4E375FD1713FD3C0010ED97 /* StudentService.m */,
+				B4E375FF171421B70010ED97 /* Scheme.h */,
+				B4E37600171421B70010ED97 /* Scheme.m */,
 			);
 			path = MittSchema;
 			sourceTree = "<group>";
@@ -83,9 +102,11 @@
 		B448180D171089D20054926B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B448180F171089D20054926B /* MittSchema.1 */,
 				B448180E171089D20054926B /* MittSchema-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = MittSchema;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B448180C171089D20054926B /* main.m in Sources */,
+				B448182417108FDF0054926B /* Student.m in Sources */,
+				B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */,
+				B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */,
+				B4E37601171421B70010ED97 /* Scheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +267,7 @@
 				B4481815171089D20054926B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
