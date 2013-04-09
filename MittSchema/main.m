@@ -28,6 +28,7 @@ int main(int argc, const char * argv[])
         
         puts("");
         
+    
         [student2 dayTasks];
         [Math writeThisDaysTasks];
         
