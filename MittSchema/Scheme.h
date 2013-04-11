@@ -10,6 +10,17 @@
 
 @interface Scheme : NSObject
 
-// NSArray * weekDays = [NSArray arrayWithObjects:@"Måndag", @"Tisdag", @"Onsdag", @"Torsdag", @"Fredag", nil];
+@property (nonatomic, copy) NSDictionary *mondayScheme;
+@property (nonatomic, copy) NSDictionary *tuesdayScheme;
+@property (nonatomic, copy) NSDictionary *wednesdayScheme;
+@property (nonatomic, copy) NSDictionary *thursdayScheme;
+@property (nonatomic, copy) NSDictionary *fridayScheme;
+
+-(id)initWithWeekScheme:(NSArray *)weekScheme
+                 monday:(NSDictionary *) monday
+                 tuesday:(NSDictionary *) tuesday
+                 wednesday:(NSDictionary *) wednesday
+                 thursday:(NSDictionary *) thursday
+                 friday:(NSDictionary *) friday;
 
 @end

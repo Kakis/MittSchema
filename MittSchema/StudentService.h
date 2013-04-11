@@ -7,17 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EnglishCourse.h"
 #import "Student.h"
+#import "course.h"
+#import "Scheme.h"
+#import "Admin.h"
 
-@class Student;
+//@class Admin;
+//@class Student;
+//@class Course;
 
 @interface StudentService : NSObject
 
 -(id)initWithStudents:(NSArray *) students;
 
 -(BOOL)addStudent:(Student *)student;
--(Student *) removeStudentWithId:(NSString *) studentId;
--(Student *) updateStudentWithId:(NSString *) studentId;
+
+//-(BOOL)updateScheme:(Scheme *)scheme;
+
+//-(Student *) removeStudent:(Student *)student withId:(NSString *) studentId;
+//-(Student *) updateStudentWithId:(NSString *) studentId;
+//-(void)logAllStudents:(NSDictionary *)students;
 
 
 @end

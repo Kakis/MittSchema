@@ -7,10 +7,10 @@
 //
 
 #import "StudentService.h"
-#import "Student.h"
 
 static NSString * const englishKey = @"english_key";
 static NSString * const mathKey = @"math_key";
+static NSString * const appdevKey = @"appdev_Key";
 
 @implementation StudentService
 {
@@ -27,7 +27,10 @@ static NSString * const mathKey = @"math_key";
     self = [super init];
     
     if (self) {
-        students = @{englishKey: [[NSMutableSet alloc] init], mathKey: [[NSMutableSet alloc] init]};
+        students = @{englishKey: [[NSMutableSet alloc] init],
+                     mathKey: [[NSMutableSet alloc] init],
+                     appdevKey: [[NSMutableSet alloc] init]
+                     };
     }
     return self;
 }
@@ -36,21 +39,69 @@ static NSString * const mathKey = @"math_key";
 {
     if([student.course isEqualToString:@"english"]){
         [students[englishKey] addObject:student];
-    } else {
+    } else if ([student.course isEqualToString:@"math"]){
         [students[mathKey] addObject:student];
+    } else {
+        [students[appdevKey] addObject:student];
     }
     return YES;
 }
 
-//-(Student *) removeStudentWithId:(NSString *) studentId
+//-(BOOL)addStudent:(Student *)student
+//{
+//    if([student.course isEqualToString:@"english"]){
+//        [students[englishKey] addObject:student];
+//    } else if ([student.course isEqualToString:@"math"]){
+//        [students[mathKey] addObject:student];
+//    } else {
+//        [students[appdevKey] addObject:student];
+//    }
+//    return YES;
+//}
+
+//-(BOOL)updateScheme:(Scheme *)scheme
 //{
 //    
 //}
-//
+
+//-(Student *) removeStudent:(Student *)student withId:(NSString *)studentId
+//{
+//    if(students[studentId])
+//    {
+//        Student *removedStudent = students[studentId];
+//        
+//        if([student.course isEqualToString:@"english"]){
+//            [students[englishKey] removeObject:student];
+//            return removedStudent;
+//        } else if ([student.course isEqualToString:@"math"]){
+//            [students[mathKey] removeObject:student];
+//            return removedStudent;
+//        } else {
+//            [students[appdevKey] removeObject:student];
+//            return removedStudent;
+//        }
+//    }
+//    return nil;
+//}
+
 //-(Student *) updateStudentWithId:(NSString *) studentId
 //{
 //    
 //}
 
+//-(void)logAllStudents:(NSDictionary *)studentsToLog
+//{
+//    for (Student *student in students)
+//    {
+//        NSLog(@"Student %@ %@ har ID: [%@]", student.firstName, student.lastName, student.studentId);
+//    }
+//}
+
+//-(void)printUsers
+//{
+//    for (User *user in users) {
+//        NSLog(@"Användare %@ har ID: %@", user.name, user.userId);
+//    }
+//}
 
 @end

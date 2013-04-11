@@ -15,7 +15,9 @@
     return [self initWithLastName:@"" firstName:@"" course:@""];
 }
 
--(id)initWithLastName:(NSString *) lastName firstName:(NSString *) firstName course:(NSString *) course
+-(id)initWithLastName:(NSString *) lastName
+            firstName:(NSString *) firstName
+               course:(NSString *) course
 {
     self = [super init];
     
@@ -35,23 +37,26 @@
 
 //-(BOOL)dayScheme
 //{
-//    
+//   return YES; 
 //}
 //
+
+
 //-(BOOL)weekScheme
 //{
-//    
+//    return YES;
 //}
 
 -(BOOL)dayTasks
 {
-    NSLog(@"Hello %@, you have some assignments in %@ today.", self.firstName, self.course);
+    NSLog(@"%@ ID:[%@]", self.firstName, self.studentId);
+    NSLog(@"Today you have a new assignment in todays %@-class.", self.course);
     return YES;
 }
 //
 //-(BOOL)weekTasks
 //{
-//    
+//    return YES;
 //}
 
 @end

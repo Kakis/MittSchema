@@ -10,12 +10,14 @@
 
 @interface Student : NSObject
 
-@property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *course;
 @property (nonatomic, copy, readonly) NSString *studentId;
 
--(id)initWithLastName:(NSString *) lastName firstName:(NSString *) firstName course:(NSString *) course;
+-(id)initWithLastName:(NSString *) lastName
+            firstName:(NSString *) firstName
+               course:(NSString *) course;
 
 // Get-metoder som hämtar schema och läsanvisningar från Course
 //-(BOOL)dayScheme;

@@ -11,7 +11,18 @@
 		B448180C171089D20054926B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B448180B171089D20054926B /* main.m */; };
 		B4481810171089D20054926B /* MittSchema.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B448180F171089D20054926B /* MittSchema.1 */; };
 		B448182417108FDF0054926B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B448182317108FDF0054926B /* Student.m */; };
+		B4612E1E17154D9800E0B6C5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4612DFF17154C2800E0B6C5 /* SenTestingKit.framework */; };
+		B4612E1F17154D9800E0B6C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4612E0117154C2800E0B6C5 /* Cocoa.framework */; };
+		B4612E2517154D9800E0B6C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4612E2317154D9800E0B6C5 /* InfoPlist.strings */; };
+		B4612E2F17154DBE00E0B6C5 /* StudentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4612E2E17154DBE00E0B6C5 /* StudentTests.m */; };
+		B4612E3017154DC700E0B6C5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B448182317108FDF0054926B /* Student.m */; };
 		B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B957D61712DDAE00ACA1D4 /* Course.m */; };
+		B4C76A521716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
+		B4C76A531716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
+		B4C76A561716E948003253D2 /* EnglishCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A551716E948003253D2 /* EnglishCourse.m */; };
+		B4C76A571716E948003253D2 /* EnglishCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A551716E948003253D2 /* EnglishCourse.m */; };
+		B4C76A5A1716EEB9003253D2 /* MathCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A591716EEB9003253D2 /* MathCourse.m */; };
+		B4C76A5B1716EEB9003253D2 /* MathCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A591716EEB9003253D2 /* MathCourse.m */; };
 		B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E375FD1713FD3C0010ED97 /* StudentService.m */; };
 		B4E37601171421B70010ED97 /* Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E37600171421B70010ED97 /* Scheme.m */; };
 /* End PBXBuildFile section */
@@ -37,8 +48,25 @@
 		B448180F171089D20054926B /* MittSchema.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MittSchema.1; sourceTree = "<group>"; };
 		B448182217108FDF0054926B /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		B448182317108FDF0054926B /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B4612DFF17154C2800E0B6C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B4612E0117154C2800E0B6C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		B4612E0417154C2800E0B6C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B4612E0517154C2800E0B6C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B4612E0617154C2800E0B6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4612E1D17154D9800E0B6C5 /* MittSchemaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MittSchemaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4612E2217154D9800E0B6C5 /* MittSchemaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MittSchemaTests-Info.plist"; sourceTree = "<group>"; };
+		B4612E2417154D9800E0B6C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4612E2917154D9800E0B6C5 /* MittSchemaTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MittSchemaTests-Prefix.pch"; sourceTree = "<group>"; };
+		B4612E2D17154DBE00E0B6C5 /* StudentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTests.h; sourceTree = "<group>"; };
+		B4612E2E17154DBE00E0B6C5 /* StudentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTests.m; sourceTree = "<group>"; };
 		B4B957D51712DDAE00ACA1D4 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		B4B957D61712DDAE00ACA1D4 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		B4C76A501716D5A3003253D2 /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
+		B4C76A511716D5A3003253D2 /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
+		B4C76A541716E948003253D2 /* EnglishCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnglishCourse.h; sourceTree = "<group>"; };
+		B4C76A551716E948003253D2 /* EnglishCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnglishCourse.m; sourceTree = "<group>"; };
+		B4C76A581716EEB9003253D2 /* MathCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathCourse.h; sourceTree = "<group>"; };
+		B4C76A591716EEB9003253D2 /* MathCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathCourse.m; sourceTree = "<group>"; };
 		B4E375FC1713FD3C0010ED97 /* StudentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentService.h; sourceTree = "<group>"; };
 		B4E375FD1713FD3C0010ED97 /* StudentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentService.m; sourceTree = "<group>"; };
 		B4E375FF171421B70010ED97 /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
@@ -54,6 +82,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4612E1917154D9800E0B6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4612E1E17154D9800E0B6C5 /* SenTestingKit.framework in Frameworks */,
+				B4612E1F17154D9800E0B6C5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B448180A171089D20054926B /* MittSchema */,
+				B4612E2017154D9800E0B6C5 /* MittSchemaTests */,
 				B4481807171089D20054926B /* Frameworks */,
 				B4481806171089D20054926B /* Products */,
 				B448180D171089D20054926B /* Supporting Files */,
@@ -71,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B4481805171089D20054926B /* MittSchema */,
+				B4612E1D17154D9800E0B6C5 /* MittSchemaTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				B4481808171089D20054926B /* Foundation.framework */,
+				B4612DFF17154C2800E0B6C5 /* SenTestingKit.framework */,
+				B4612E0117154C2800E0B6C5 /* Cocoa.framework */,
+				B4612E0317154C2800E0B6C5 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,14 +129,20 @@
 			isa = PBXGroup;
 			children = (
 				B448180B171089D20054926B /* main.m */,
-				B448182217108FDF0054926B /* Student.h */,
-				B448182317108FDF0054926B /* Student.m */,
+				B4C76A501716D5A3003253D2 /* Admin.h */,
+				B4C76A511716D5A3003253D2 /* Admin.m */,
 				B4B957D51712DDAE00ACA1D4 /* Course.h */,
 				B4B957D61712DDAE00ACA1D4 /* Course.m */,
-				B4E375FC1713FD3C0010ED97 /* StudentService.h */,
-				B4E375FD1713FD3C0010ED97 /* StudentService.m */,
+				B4C76A541716E948003253D2 /* EnglishCourse.h */,
+				B4C76A551716E948003253D2 /* EnglishCourse.m */,
 				B4E375FF171421B70010ED97 /* Scheme.h */,
 				B4E37600171421B70010ED97 /* Scheme.m */,
+				B448182217108FDF0054926B /* Student.h */,
+				B448182317108FDF0054926B /* Student.m */,
+				B4E375FC1713FD3C0010ED97 /* StudentService.h */,
+				B4E375FD1713FD3C0010ED97 /* StudentService.m */,
+				B4C76A581716EEB9003253D2 /* MathCourse.h */,
+				B4C76A591716EEB9003253D2 /* MathCourse.m */,
 			);
 			path = MittSchema;
 			sourceTree = "<group>";
@@ -107,6 +155,36 @@
 			);
 			name = "Supporting Files";
 			path = MittSchema;
+			sourceTree = "<group>";
+		};
+		B4612E0317154C2800E0B6C5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4612E0417154C2800E0B6C5 /* AppKit.framework */,
+				B4612E0517154C2800E0B6C5 /* CoreData.framework */,
+				B4612E0617154C2800E0B6C5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B4612E2017154D9800E0B6C5 /* MittSchemaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4612E2117154D9800E0B6C5 /* Supporting Files */,
+				B4612E2D17154DBE00E0B6C5 /* StudentTests.h */,
+				B4612E2E17154DBE00E0B6C5 /* StudentTests.m */,
+			);
+			path = MittSchemaTests;
+			sourceTree = "<group>";
+		};
+		B4612E2117154D9800E0B6C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4612E2217154D9800E0B6C5 /* MittSchemaTests-Info.plist */,
+				B4612E2317154D9800E0B6C5 /* InfoPlist.strings */,
+				B4612E2917154D9800E0B6C5 /* MittSchemaTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +206,24 @@
 			productName = MittSchema;
 			productReference = B4481805171089D20054926B /* MittSchema */;
 			productType = "com.apple.product-type.tool";
+		};
+		B4612E1C17154D9800E0B6C5 /* MittSchemaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4612E2A17154D9800E0B6C5 /* Build configuration list for PBXNativeTarget "MittSchemaTests" */;
+			buildPhases = (
+				B4612E1817154D9800E0B6C5 /* Sources */,
+				B4612E1917154D9800E0B6C5 /* Frameworks */,
+				B4612E1A17154D9800E0B6C5 /* Resources */,
+				B4612E1B17154D9800E0B6C5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MittSchemaTests;
+			productName = MittSchemaTests;
+			productReference = B4612E1D17154D9800E0B6C5 /* MittSchemaTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -151,9 +247,37 @@
 			projectRoot = "";
 			targets = (
 				B4481804171089D20054926B /* MittSchema */,
+				B4612E1C17154D9800E0B6C5 /* MittSchemaTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4612E1A17154D9800E0B6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4612E2517154D9800E0B6C5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4612E1B17154D9800E0B6C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4481801171089D20054926B /* Sources */ = {
@@ -165,10 +289,36 @@
 				B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */,
 				B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */,
 				B4E37601171421B70010ED97 /* Scheme.m in Sources */,
+				B4C76A521716D5A3003253D2 /* Admin.m in Sources */,
+				B4C76A561716E948003253D2 /* EnglishCourse.m in Sources */,
+				B4C76A5A1716EEB9003253D2 /* MathCourse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4612E1817154D9800E0B6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4612E2F17154DBE00E0B6C5 /* StudentTests.m in Sources */,
+				B4612E3017154DC700E0B6C5 /* Student.m in Sources */,
+				B4C76A531716D5A3003253D2 /* Admin.m in Sources */,
+				B4C76A571716E948003253D2 /* EnglishCourse.m in Sources */,
+				B4C76A5B1716EEB9003253D2 /* MathCourse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4612E2317154D9800E0B6C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4612E2417154D9800E0B6C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B4481811171089D20054926B /* Debug */ = {
@@ -248,6 +398,32 @@
 			};
 			name = Release;
 		};
+		B4612E2B17154D9800E0B6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MittSchemaTests/MittSchemaTests-Prefix.pch";
+				INFOPLIST_FILE = "MittSchemaTests/MittSchemaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B4612E2C17154D9800E0B6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MittSchemaTests/MittSchemaTests-Prefix.pch";
+				INFOPLIST_FILE = "MittSchemaTests/MittSchemaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -265,6 +441,15 @@
 			buildConfigurations = (
 				B4481814171089D20054926B /* Debug */,
 				B4481815171089D20054926B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4612E2A17154D9800E0B6C5 /* Build configuration list for PBXNativeTarget "MittSchemaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4612E2B17154D9800E0B6C5 /* Debug */,
+				B4612E2C17154D9800E0B6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
