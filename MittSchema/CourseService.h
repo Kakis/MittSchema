@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Course.h"
 
 @interface CourseService : NSObject
+
+-(id)initWithCourses:(NSArray *)coursesToAdd;
+
+-(BOOL)addCourse:(Course *)course;
 
 @end

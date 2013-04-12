@@ -39,8 +39,10 @@ static NSString * const appdevKey = @"appdev_Key";
 {
     if([student.course isEqualToString:@"english"]){
         [students[englishKey] addObject:student];
+        
     } else if ([student.course isEqualToString:@"math"]){
         [students[mathKey] addObject:student];
+        
     } else {
         [students[appdevKey] addObject:student];
     }

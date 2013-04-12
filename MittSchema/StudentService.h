@@ -18,7 +18,7 @@
 
 @interface StudentService : NSObject
 
--(id)initWithStudents:(NSArray *) students;
+-(id)initWithStudents:(NSArray *)studentsToAdd;
 
 -(BOOL)addStudent:(Student *)student;
 
@@ -26,7 +26,5 @@
 //-(Student *) updateStudentWithId:(NSString *) studentId;
 
 //-(BOOL)updateScheme:(Scheme *)scheme;
-
-// Skriver en tom kommentar... skriver lite till... skrev ännu lite mer
 
 @end

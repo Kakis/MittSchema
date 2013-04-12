@@ -31,22 +31,18 @@ int main(int argc, const char * argv[])
         
         Student *student2 = [[Student alloc] initWithLastName:@"Bergkvist"
                                                     firstName:@"Kristoffer"
-                                                       course:@"appdev"];
+                                                       course:@"english"];
         
-        Student *student3 = [[Student alloc] initWithLastName:@"SjöstrandGereholt"
+        Student *student3 = [[Student alloc] initWithLastName:@"Sjöstrand Gereholt"
                                                     firstName:@"Amelie"
                                                        course:@"math"];
-        
-        Student *student4 = [[Student alloc] initWithLastName:@"Hemmingsson"
-                                                    firstName:@"Joanna"
-                                                       course:@"english"];
         
         StudentService *students = [[StudentService alloc] init];
         
         [students addStudent:student1];
         [students addStudent:student2];
         [students addStudent:student3];
-        [students addStudent:student4];
+        //[students addStudent:student4];
         
         
         //////////////////////////////////////////// Init of Courses /////////////////////////////////////////////
@@ -79,16 +75,19 @@ int main(int argc, const char * argv[])
         
         puts("");
         
+        [student1 logStudent];
         [student1 dayTasks];
         [English writeMessage];
         
         puts("");
         
+        [student2 logStudent];
         [student2 dayTasks];
         [Math writeMessage];
         
         puts("");
         
+        [student3 logStudent];
         [student3 dayTasks];
         [Appdev writeMessage];
         

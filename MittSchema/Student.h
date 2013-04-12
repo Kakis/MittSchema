@@ -19,11 +19,14 @@
             firstName:(NSString *) firstName
                course:(NSString *) course;
 
+-(BOOL)logStudent;
+
 // Get-metoder som hämtar schema och läsanvisningar från Course
 //-(BOOL)dayScheme;
 //-(BOOL)weekScheme;
 -(BOOL)dayTasks;
 //-(BOOL)weekTasks;
+
 
 
 @end

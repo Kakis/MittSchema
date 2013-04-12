@@ -35,6 +35,12 @@
     return 37 * [self.studentId hash];
 }
 
+-(BOOL)logStudent
+{
+    NSLog(@"%@ %@ ID:[%@]", self.firstName, self.lastName, self.studentId);
+    return YES;
+}
+
 //-(BOOL)dayScheme
 //{
 //   return YES; 
@@ -49,7 +55,6 @@
 
 -(BOOL)dayTasks
 {
-    NSLog(@"%@ ID:[%@]", self.firstName, self.studentId);
     NSLog(@"Today you have a new assignment in todays %@-class.", self.course);
     return YES;
 }
@@ -58,5 +63,6 @@
 //{
 //    return YES;
 //}
+
 
 @end
