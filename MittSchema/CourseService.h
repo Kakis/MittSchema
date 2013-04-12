@@ -13,6 +13,6 @@
 
 -(id)initWithCourses:(NSArray *)coursesToAdd;
 
--(BOOL)addCourse:(Course *)course;
+-(void)addCourse:(Course *)course;
 
 @end

@@ -27,8 +27,5 @@
 
 -(BOOL)writeMessage;
 
-//-(BOOL)writeThisDaysScheme;
-//-(BOOL)writeThisWeeksScheme;
-//-(BOOL)writeThisWeeksTasks;
 
 @end

@@ -12,9 +12,6 @@
 #import "Scheme.h"
 #import "Admin.h"
 
-//@class Admin;
-//@class Student;
-//@class Course;
 
 @interface StudentService : NSObject
 
@@ -22,9 +19,5 @@
 
 -(BOOL)addStudent:(Student *)student;
 
-//-(Student *) removeStudent:(Student *)student withId:(NSString *) studentId;
-//-(Student *) updateStudentWithId:(NSString *) studentId;
-
-//-(BOOL)updateScheme:(Scheme *)scheme;
 
 @end

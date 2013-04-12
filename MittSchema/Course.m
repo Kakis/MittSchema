@@ -31,21 +31,10 @@
         self.classroom = classroom;
         self.assignment = assignment;
         self.message = message;
-        
-        // Loop som går igenom våra course-Keys och lägger till studenter för varje kurs
     }
     return self;
 }
 
-//-(BOOL)writeThisDaysScheme
-//{
-//    NSLog(@"I %@ ska du läsa %@", self.courseName, self.dayScheme);
-//}
-//
-//-(BOOL)writeThisWeeksScheme
-//{
-//    NSLog(@"I %@ ska du läsa %@", self.courseName, self.weekScheme);
-//}
 
 -(BOOL)writeMessage
 {

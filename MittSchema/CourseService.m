@@ -8,13 +8,13 @@
 
 #import "CourseService.h"
 
-static NSString * const math = @"math";
-static NSString * const appdev = @"appdev";
-static NSString * const english = @"english";
+static NSString * const mathCourse = @"math_course";
+static NSString * const appdevCourse = @"appdev_course";
+static NSString * const englishCourse = @"english_course";
 
 @implementation CourseService
 {
-    NSArray *courses;
+    NSMutableArray *courses;
 }
 
 - (id)init
@@ -32,23 +32,10 @@ static NSString * const english = @"english";
     return self;
 }
 
--(BOOL)addCourse:(Course *)course
+-(void)addCourse:(Course *)course
 {
-   //
+    [courses addObject:course];
 }
 
-//-(BOOL)addStudent:(Student *)student
-//{
-//    if([student.course isEqualToString:@"english"]){
-//        [students[englishKey] addObject:student];
-//        
-//    } else if ([student.course isEqualToString:@"math"]){
-//        [students[mathKey] addObject:student];
-//        
-//    } else {
-//        [students[appdevKey] addObject:student];
-//    }
-//    return YES;
-//}
 
 @end

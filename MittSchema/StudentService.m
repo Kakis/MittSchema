@@ -50,36 +50,4 @@ static NSString * const appdevKey = @"appdev_Key";
 }
 
 
-//-(Student *) updateStudentWithId:(NSString *) studentId
-//{
-//
-//}
-
-
-//-(Student *) removeStudent:(Student *)student withId:(NSString *)studentId
-//{
-//    if(students[studentId])
-//    {
-//        Student *removedStudent = students[studentId];
-//        
-//        if([student.course isEqualToString:@"english"]){
-//            [students[englishKey] removeObject:student];
-//            return removedStudent;
-//        } else if ([student.course isEqualToString:@"math"]){
-//            [students[mathKey] removeObject:student];
-//            return removedStudent;
-//        } else {
-//            [students[appdevKey] removeObject:student];
-//            return removedStudent;
-//        }
-//    }
-//    return nil;
-//}
-
-
-//-(BOOL)updateScheme:(Scheme *)scheme
-//{
-//
-//}
-
 @end

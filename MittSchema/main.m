@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "StudentService.h"
+#import "CourseService.h"
 #import "Student.h"
 #import "Course.h"
 #import "Admin.h"
@@ -42,7 +43,6 @@ int main(int argc, const char * argv[])
         [students addStudent:student1];
         [students addStudent:student2];
         [students addStudent:student3];
-        //[students addStudent:student4];
         
         
         //////////////////////////////////////////// Init of Courses /////////////////////////////////////////////
@@ -67,6 +67,13 @@ int main(int argc, const char * argv[])
                                                    classroom:@"Sal 405"
                                                   assignment:@"chapter 3"
                                                      message:@"Exersizes to do: "];
+        
+        
+        CourseService *courses = [[CourseService alloc] init];
+        
+        [courses addCourse:Appdev];
+        [courses addCourse:Math];
+        [courses addCourse:English];
         
         
         /////////////////////////////////////////////////  Logs //////////////////////////////////////////////////

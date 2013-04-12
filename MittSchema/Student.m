@@ -41,28 +41,13 @@
     return YES;
 }
 
-//-(BOOL)dayScheme
-//{
-//   return YES; 
-//}
-//
-
-
-//-(BOOL)weekScheme
-//{
-//    return YES;
-//}
 
 -(BOOL)dayTasks
 {
     NSLog(@"Today you have a new assignment in todays %@-class.", self.course);
     return YES;
 }
-//
-//-(BOOL)weekTasks
-//{
-//    return YES;
-//}
+
 
 
 @end
