@@ -27,6 +27,6 @@
 
 //-(BOOL)updateScheme:(Scheme *)scheme;
 
-// Skriver en tom kommentar
+// Skriver en tom kommentar... skriver lite till
 
 @end
