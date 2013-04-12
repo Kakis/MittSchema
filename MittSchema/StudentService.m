@@ -47,22 +47,12 @@ static NSString * const appdevKey = @"appdev_Key";
     return YES;
 }
 
-//-(BOOL)addStudent:(Student *)student
+
+//-(Student *) updateStudentWithId:(NSString *) studentId
 //{
-//    if([student.course isEqualToString:@"english"]){
-//        [students[englishKey] addObject:student];
-//    } else if ([student.course isEqualToString:@"math"]){
-//        [students[mathKey] addObject:student];
-//    } else {
-//        [students[appdevKey] addObject:student];
-//    }
-//    return YES;
+//
 //}
 
-//-(BOOL)updateScheme:(Scheme *)scheme
-//{
-//    
-//}
 
 //-(Student *) removeStudent:(Student *)student withId:(NSString *)studentId
 //{
@@ -84,24 +74,10 @@ static NSString * const appdevKey = @"appdev_Key";
 //    return nil;
 //}
 
-//-(Student *) updateStudentWithId:(NSString *) studentId
-//{
-//    
-//}
 
-//-(void)logAllStudents:(NSDictionary *)studentsToLog
+//-(BOOL)updateScheme:(Scheme *)scheme
 //{
-//    for (Student *student in students)
-//    {
-//        NSLog(@"Student %@ %@ har ID: [%@]", student.firstName, student.lastName, student.studentId);
-//    }
-//}
-
-//-(void)printUsers
-//{
-//    for (User *user in users) {
-//        NSLog(@"Användare %@ har ID: %@", user.name, user.userId);
-//    }
+//
 //}
 
 @end

@@ -39,7 +39,7 @@
 //{
 //    NSLog(@"I %@ ska du läsa %@", self.courseName, self.dayScheme);
 //}
-//
+
 //-(BOOL)writeThisWeeksScheme
 //{
 //    NSLog(@"I %@ ska du läsa %@", self.courseName, self.weekScheme);
@@ -51,9 +51,5 @@
     return YES;
 }
 
-//-(BOOL)writeThisWeeksTasks
-//{
-//    NSLog(@"I %@ ska du denna vecka läsa: %@",self.tasks, self.courseName);
-//}
 
 @end

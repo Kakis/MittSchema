@@ -23,11 +23,10 @@
 
 -(BOOL)addStudent:(Student *)student;
 
-//-(BOOL)updateScheme:(Scheme *)scheme;
-
 //-(Student *) removeStudent:(Student *)student withId:(NSString *) studentId;
 //-(Student *) updateStudentWithId:(NSString *) studentId;
-//-(void)logAllStudents:(NSDictionary *)students;
+
+//-(BOOL)updateScheme:(Scheme *)scheme;
 
 
 @end

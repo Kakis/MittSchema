@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "StudentService.h"
 #import "EnglishCourse.h"
+#import "MathCourse.h"
+#import "AppDevCourse.h"
 #import "Student.h"
 #import "Course.h"
 #import "Admin.h"
@@ -24,7 +26,7 @@ int main(int argc, const char * argv[])
                                               password:@"superduperhemligt"];
         
         
-        /////////////////////////////////////////// Init of Students ////////////////////////////////////////////
+        ////////////////////////////////// Init of Students in StudentService ///////////////////////////////////
         
         Student *student1 = [[Student alloc] initWithLastName:@"Hagfeldt"
                                                     firstName:@"Jens"
@@ -59,28 +61,30 @@ int main(int argc, const char * argv[])
                                                   assignment:@"chapter 3"
                                                      message:@"Exersizes to do: "];
         
-//        Course *English = [[Course alloc] initWithCourseName:@"english"
-//                                                     teacher:@"Tom"
-//                                                        date:@"2001-03-24"
-//                                                   classroom:@"sal 203"
-//                                                  assignment:@"chapter 3"
-//                                                     message:@"Exersizes to do: "];
         
-        Course *Math = [[Course alloc] initWithCourseName:@"math"
-                                                  teacher:@"Lennart"
-                                                     date:@"2001-03-24"
-                                                classroom:@"sal 203"
-                                               assignment:@"chapter 4"
-                                                  message:@"Exersizes to do: "];
+        MathCourse *Math = [[MathCourse alloc] initWithCourseName:@"math"
+                                                          teacher:@"Anders"
+                                                             time:@"2001-03-24"
+                                                        classroom:@"sal 405"
+                                                       assignment:@"chapter 4"
+                                                          message:@"Exersizes to do: "];
         
-        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
+        AppDevCourse *Appdev = [[AppDevCourse alloc] initWithCourseName:@"appdev"
                                                     teacher:@"Anders"
-                                                       date:@"2001-03-24"
+                                                       time:@"2001-03-24"
                                                   classroom:@"sal 4120"
                                                  assignment:@"chapter 5"
                                                     message:@"Exersizes to do: "];
         
-        ///////////////////////////////////////////////////  Logs ///////////////////////////////////////////////////
+//        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
+//                                                    teacher:@"Anders"
+//                                                       date:@"2001-03-24"
+//                                                  classroom:@"sal 4120"
+//                                                 assignment:@"chapter 5"
+//                                                    message:@"Exersizes to do: "];
+        
+        
+        /////////////////////////////////////////////////  Logs //////////////////////////////////////////////////
         
         NSLog(@"The %@ has password: [%@]",[admin userName],[admin password]);
         
@@ -100,6 +104,7 @@ int main(int argc, const char * argv[])
         [Appdev writeMessage];
         
         //puts("\n   removing a student   \n");
+        //
         //[students removeStudent:student4 withId:@"8110212D-AF76-4945-A321-B21721A82873"];
         //NSLog(@"Student %@ %@ was removed", student4.firstName, student4.lastName);
         

@@ -1,23 +1,23 @@
 //
-//  Course.m
+//  AppDevCourse.m
 //  MittSchema
 //
-//  Created by Jens Hagfeldt on 2013-04-08.
+//  Created by Jens Hagfeldt on 2013-04-12.
 //  Copyright (c) 2013 Jens Hagfeldt. All rights reserved.
 //
 
-#import "Course.h"
+#import "AppDevCourse.h"
 
-@implementation Course
+@implementation AppDevCourse
 
 -(id)init
 {
-    return[self initWithCourseName:@"" teacher:@"" date:@"" classroom:@"" assignment:@"" message:@""];
+    return[self initWithCourseName:@"" teacher:@"" time:@"" classroom:@"" assignment:@"" message:@""];
 }
 
 - (id)initWithCourseName:(NSString *)courseName
                  teacher:(NSString *)teacher
-                    date:(NSString *)date
+                    time:(NSString *)time
                classroom:(NSString *)classroom
               assignment:(NSString *)assignment
                  message:(NSString *)message
@@ -27,12 +27,10 @@
     if (self) {
         self.courseName = courseName;
         self.teacher = teacher;
-        self.date = date;
+        self.time = time;
         self.classroom = classroom;
         self.assignment = assignment;
         self.message = message;
-        
-        // Loop som går igenom våra course-Keys och lägger till studenter för varje kurs
     }
     return self;
 }
@@ -41,7 +39,7 @@
 //{
 //    NSLog(@"I %@ ska du läsa %@", self.courseName, self.dayScheme);
 //}
-//
+
 //-(BOOL)writeThisWeeksScheme
 //{
 //    NSLog(@"I %@ ska du läsa %@", self.courseName, self.weekScheme);
@@ -49,7 +47,7 @@
 
 -(BOOL)writeMessage
 {
-    NSLog(@"%@ A new %@-assigniment from %@: %@ %@.", self.date, self.courseName, self.teacher, self.assignment, self.message);
+    NSLog(@"%@ A new %@-assigniment from %@: %@ %@.", self.time, self.courseName, self.teacher, self.assignment, self.message);
     return YES;
 }
 
