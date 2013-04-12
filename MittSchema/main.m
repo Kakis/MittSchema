@@ -76,7 +76,7 @@ int main(int argc, const char * argv[])
                                                  assignment:@"chapter 5"
                                                     message:@"Exersizes to do: "];
         
-//        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
+////        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
 //                                                    teacher:@"Anders"
 //                                                       date:@"2001-03-24"
 //                                                  classroom:@"sal 4120"
