@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "StudentService.h"
-#import "EnglishCourse.h"
-#import "MathCourse.h"
-#import "AppDevCourse.h"
 #import "Student.h"
 #import "Course.h"
 #import "Admin.h"
@@ -54,34 +51,26 @@ int main(int argc, const char * argv[])
         
         //////////////////////////////////////////// Init of Courses /////////////////////////////////////////////
         
-        EnglishCourse *English = [[EnglishCourse alloc] initWithCourseName:@"english"
-                                                     teacher:@"Tom"
-                                                        time:@"2001-03-24"
-                                                   classroom:@"sal 203"
-                                                  assignment:@"chapter 3"
-                                                     message:@"Exersizes to do: "];
-        
-        
-        MathCourse *Math = [[MathCourse alloc] initWithCourseName:@"math"
-                                                          teacher:@"Anders"
-                                                             time:@"2001-03-24"
-                                                        classroom:@"sal 405"
-                                                       assignment:@"chapter 4"
-                                                          message:@"Exersizes to do: "];
-        
-        AppDevCourse *Appdev = [[AppDevCourse alloc] initWithCourseName:@"appdev"
+        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
                                                     teacher:@"Anders"
-                                                       time:@"2001-03-24"
+                                                       date:@"2001-03-24"
                                                   classroom:@"sal 4120"
                                                  assignment:@"chapter 5"
                                                     message:@"Exersizes to do: "];
         
-//        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
-//                                                    teacher:@"Anders"
-//                                                       date:@"2001-03-24"
-//                                                  classroom:@"sal 4120"
-//                                                 assignment:@"chapter 5"
-//                                                    message:@"Exersizes to do: "];
+        Course *Math = [[Course alloc] initWithCourseName:@"math"
+                                                  teacher:@"Lennart"
+                                                     date:@"2001-03-24"
+                                                classroom:@"Sal 3"
+                                               assignment:@"chapter 4"
+                                                  message:@"Exersizes to do: "];
+        
+        Course *English = [[Course alloc] initWithCourseName:@"english"
+                                                     teacher:@"Tom"
+                                                        date:@"2001-03-24"
+                                                   classroom:@"Sal 405"
+                                                  assignment:@"chapter 3"
+                                                     message:@"Exersizes to do: "];
         
         
         /////////////////////////////////////////////////  Logs //////////////////////////////////////////////////

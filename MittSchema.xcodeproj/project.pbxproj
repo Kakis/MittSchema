@@ -16,15 +16,11 @@
 		B4612E2517154D9800E0B6C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4612E2317154D9800E0B6C5 /* InfoPlist.strings */; };
 		B4612E2F17154DBE00E0B6C5 /* StudentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4612E2E17154DBE00E0B6C5 /* StudentTests.m */; };
 		B4612E3017154DC700E0B6C5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B448182317108FDF0054926B /* Student.m */; };
-		B47AB8581717EC100093DCF2 /* AppDevCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B47AB8571717EC100093DCF2 /* AppDevCourse.m */; };
-		B47AB8591717EC100093DCF2 /* AppDevCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B47AB8571717EC100093DCF2 /* AppDevCourse.m */; };
+		B46422ED1718022C00E79AA7 /* CourseService.m in Sources */ = {isa = PBXBuildFile; fileRef = B46422EC1718022C00E79AA7 /* CourseService.m */; };
+		B46422EE1718022C00E79AA7 /* CourseService.m in Sources */ = {isa = PBXBuildFile; fileRef = B46422EC1718022C00E79AA7 /* CourseService.m */; };
 		B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B957D61712DDAE00ACA1D4 /* Course.m */; };
 		B4C76A521716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
 		B4C76A531716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
-		B4C76A561716E948003253D2 /* EnglishCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A551716E948003253D2 /* EnglishCourse.m */; };
-		B4C76A571716E948003253D2 /* EnglishCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A551716E948003253D2 /* EnglishCourse.m */; };
-		B4C76A5A1716EEB9003253D2 /* MathCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A591716EEB9003253D2 /* MathCourse.m */; };
-		B4C76A5B1716EEB9003253D2 /* MathCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A591716EEB9003253D2 /* MathCourse.m */; };
 		B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E375FD1713FD3C0010ED97 /* StudentService.m */; };
 		B4E37601171421B70010ED97 /* Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E37600171421B70010ED97 /* Scheme.m */; };
 /* End PBXBuildFile section */
@@ -61,16 +57,12 @@
 		B4612E2917154D9800E0B6C5 /* MittSchemaTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MittSchemaTests-Prefix.pch"; sourceTree = "<group>"; };
 		B4612E2D17154DBE00E0B6C5 /* StudentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTests.h; sourceTree = "<group>"; };
 		B4612E2E17154DBE00E0B6C5 /* StudentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTests.m; sourceTree = "<group>"; };
-		B47AB8561717EC100093DCF2 /* AppDevCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDevCourse.h; sourceTree = "<group>"; };
-		B47AB8571717EC100093DCF2 /* AppDevCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDevCourse.m; sourceTree = "<group>"; };
+		B46422EB1718022C00E79AA7 /* CourseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseService.h; sourceTree = "<group>"; };
+		B46422EC1718022C00E79AA7 /* CourseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseService.m; sourceTree = "<group>"; };
 		B4B957D51712DDAE00ACA1D4 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		B4B957D61712DDAE00ACA1D4 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		B4C76A501716D5A3003253D2 /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
 		B4C76A511716D5A3003253D2 /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
-		B4C76A541716E948003253D2 /* EnglishCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnglishCourse.h; sourceTree = "<group>"; };
-		B4C76A551716E948003253D2 /* EnglishCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnglishCourse.m; sourceTree = "<group>"; };
-		B4C76A581716EEB9003253D2 /* MathCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathCourse.h; sourceTree = "<group>"; };
-		B4C76A591716EEB9003253D2 /* MathCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathCourse.m; sourceTree = "<group>"; };
 		B4E375FC1713FD3C0010ED97 /* StudentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentService.h; sourceTree = "<group>"; };
 		B4E375FD1713FD3C0010ED97 /* StudentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentService.m; sourceTree = "<group>"; };
 		B4E375FF171421B70010ED97 /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
@@ -141,12 +133,8 @@
 				B4E375FD1713FD3C0010ED97 /* StudentService.m */,
 				B4B957D51712DDAE00ACA1D4 /* Course.h */,
 				B4B957D61712DDAE00ACA1D4 /* Course.m */,
-				B47AB8561717EC100093DCF2 /* AppDevCourse.h */,
-				B47AB8571717EC100093DCF2 /* AppDevCourse.m */,
-				B4C76A541716E948003253D2 /* EnglishCourse.h */,
-				B4C76A551716E948003253D2 /* EnglishCourse.m */,
-				B4C76A581716EEB9003253D2 /* MathCourse.h */,
-				B4C76A591716EEB9003253D2 /* MathCourse.m */,
+				B46422EB1718022C00E79AA7 /* CourseService.h */,
+				B46422EC1718022C00E79AA7 /* CourseService.m */,
 				B4E375FF171421B70010ED97 /* Scheme.h */,
 				B4E37600171421B70010ED97 /* Scheme.m */,
 			);
@@ -296,9 +284,7 @@
 				B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */,
 				B4E37601171421B70010ED97 /* Scheme.m in Sources */,
 				B4C76A521716D5A3003253D2 /* Admin.m in Sources */,
-				B4C76A561716E948003253D2 /* EnglishCourse.m in Sources */,
-				B4C76A5A1716EEB9003253D2 /* MathCourse.m in Sources */,
-				B47AB8581717EC100093DCF2 /* AppDevCourse.m in Sources */,
+				B46422ED1718022C00E79AA7 /* CourseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +295,7 @@
 				B4612E2F17154DBE00E0B6C5 /* StudentTests.m in Sources */,
 				B4612E3017154DC700E0B6C5 /* Student.m in Sources */,
 				B4C76A531716D5A3003253D2 /* Admin.m in Sources */,
-				B4C76A571716E948003253D2 /* EnglishCourse.m in Sources */,
-				B4C76A5B1716EEB9003253D2 /* MathCourse.m in Sources */,
-				B47AB8591717EC100093DCF2 /* AppDevCourse.m in Sources */,
+				B46422EE1718022C00E79AA7 /* CourseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

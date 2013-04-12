@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EnglishCourse.h"
 #import "Student.h"
 #import "course.h"
 #import "Scheme.h"
@@ -28,5 +27,6 @@
 
 //-(BOOL)updateScheme:(Scheme *)scheme;
 
+// Skriver en tom kommentar
 
 @end
