@@ -28,7 +28,6 @@
         self->_studentId = [[NSUUID UUID] UUIDString];
     }
     return self;
-    // Lägger till en kommentar
 }
 
 -(NSUInteger)hash
