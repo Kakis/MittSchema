@@ -18,6 +18,8 @@
 		B4612E3017154DC700E0B6C5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B448182317108FDF0054926B /* Student.m */; };
 		B46422ED1718022C00E79AA7 /* CourseService.m in Sources */ = {isa = PBXBuildFile; fileRef = B46422EC1718022C00E79AA7 /* CourseService.m */; };
 		B46422EE1718022C00E79AA7 /* CourseService.m in Sources */ = {isa = PBXBuildFile; fileRef = B46422EC1718022C00E79AA7 /* CourseService.m */; };
+		B46FB90E171C0065009D2F1B /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = B46FB90D171C0065009D2F1B /* Lesson.m */; };
+		B46FB90F171C0065009D2F1B /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = B46FB90D171C0065009D2F1B /* Lesson.m */; };
 		B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B957D61712DDAE00ACA1D4 /* Course.m */; };
 		B4C76A521716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
 		B4C76A531716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
@@ -59,6 +61,8 @@
 		B4612E2E17154DBE00E0B6C5 /* StudentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTests.m; sourceTree = "<group>"; };
 		B46422EB1718022C00E79AA7 /* CourseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseService.h; sourceTree = "<group>"; };
 		B46422EC1718022C00E79AA7 /* CourseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseService.m; sourceTree = "<group>"; };
+		B46FB90C171C0064009D2F1B /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson.h; sourceTree = "<group>"; };
+		B46FB90D171C0065009D2F1B /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson.m; sourceTree = "<group>"; };
 		B4B957D51712DDAE00ACA1D4 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		B4B957D61712DDAE00ACA1D4 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		B4C76A501716D5A3003253D2 /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				B4B957D61712DDAE00ACA1D4 /* Course.m */,
 				B46422EB1718022C00E79AA7 /* CourseService.h */,
 				B46422EC1718022C00E79AA7 /* CourseService.m */,
+				B46FB90C171C0064009D2F1B /* Lesson.h */,
+				B46FB90D171C0065009D2F1B /* Lesson.m */,
 				B4E375FF171421B70010ED97 /* Scheme.h */,
 				B4E37600171421B70010ED97 /* Scheme.m */,
 			);
@@ -285,6 +291,7 @@
 				B4E37601171421B70010ED97 /* Scheme.m in Sources */,
 				B4C76A521716D5A3003253D2 /* Admin.m in Sources */,
 				B46422ED1718022C00E79AA7 /* CourseService.m in Sources */,
+				B46FB90E171C0065009D2F1B /* Lesson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +303,7 @@
 				B4612E3017154DC700E0B6C5 /* Student.m in Sources */,
 				B4C76A531716D5A3003253D2 /* Admin.m in Sources */,
 				B46422EE1718022C00E79AA7 /* CourseService.m in Sources */,
+				B46FB90F171C0065009D2F1B /* Lesson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
