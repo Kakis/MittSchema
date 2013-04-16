@@ -21,7 +21,9 @@
 
 -(BOOL)logStudent;
 
--(BOOL)dayTasks;
+-(BOOL)dayAssignment;
+
+-(void)messageFromAdmin:(NSString *)message;
 
 
 @end

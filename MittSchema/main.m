@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "StudentService.h"
 #import "CourseService.h"
+#import "Lesson.h"
 #import "Student.h"
 #import "Course.h"
 #import "Admin.h"
@@ -47,55 +48,67 @@ int main(int argc, const char * argv[])
         
         //////////////////////////////////////////// Init of Courses /////////////////////////////////////////////
         
-        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"
-                                                    teacher:@"Anders"
-                                                       date:@"2001-03-24"
-                                                  classroom:@"sal 4120"
-                                                 assignment:@"chapter 5"
-                                                    message:@"Exersizes to do: "];
+//        Course *Appdev = [[Course alloc] initWithCourseName:@"appdev"];
+//        
+//        Course *Math = [[Course alloc] initWithCourseName:@"math"];
+//        
+//        Course *English = [[Course alloc] initWithCourseName:@"english"];
+//        
+//        
+//        CourseService *courses = [[CourseService alloc] init];
+//        
+//        [courses addCourse:Appdev];
+//        [courses addCourse:Math];
+//        [courses addCourse:English];
         
-        Course *Math = [[Course alloc] initWithCourseName:@"math"
+    
+        //////////////////////////////////////////// Init of Lessons /////////////////////////////////////////////
+        
+        Lesson *Appdev = [[Lesson alloc] initWithLessonName:@"appdev"
+                                                  classroom:@"sal 32"
+                                                    teacher:@"Tom"
+                                                  startTime:@"09.00"
+                                                    endTime:@"10.00"
+                                                 assignment:@"read chapter: Collection classes"];
+        
+        Lesson *Math = [[Lesson alloc] initWithLessonName:@"math"
+                                                classroom:@"sal 41"
                                                   teacher:@"Lennart"
-                                                     date:@"2001-03-24"
-                                                classroom:@"Sal 3"
-                                               assignment:@"chapter 4"
-                                                  message:@"Exersizes to do: "];
+                                                startTime:@"09.00"
+                                                  endTime:@"10.00"
+                                               assignment:@"read chapter: Addition"];
         
-        Course *English = [[Course alloc] initWithCourseName:@"english"
+        Lesson *English = [[Lesson alloc] initWithLessonName:@"english"
+                                                   classroom:@"sal 54"
                                                      teacher:@"Tom"
-                                                        date:@"2001-03-24"
-                                                   classroom:@"Sal 405"
-                                                  assignment:@"chapter 3"
-                                                     message:@"Exersizes to do: "];
-        
-        
-        CourseService *courses = [[CourseService alloc] init];
-        
-        [courses addCourse:Appdev];
-        [courses addCourse:Math];
-        [courses addCourse:English];
+                                                   startTime:@"09.00"
+                                                     endTime:@"10.00"
+                                                  assignment:@"read chapter: The ride"];
         
         
         /////////////////////////////////////////////////  Logs //////////////////////////////////////////////////
         
         NSLog(@"The %@ has password: [%@]",[admin userName],[admin password]);
         
+        [admin messageToStudent:student1 message:@"Från och med vecka 15 är vi sal 32."];
+        //[admin messageToAllStudents:students message:@"Skolan stänger nu."];
+        
         puts("");
         
         [student1 logStudent];
-        [student1 dayTasks];
+        [student1 dayAssignment];
         [English writeMessage];
         
         puts("");
         
         [student2 logStudent];
-        [student2 dayTasks];
+        [student2 dayAssignment];
         [Math writeMessage];
         
         puts("");
         
         [student3 logStudent];
-        [student3 dayTasks];
+        [student3 dayAssignment];
         [Appdev writeMessage];
         
         //puts("\n   removing a student   \n");

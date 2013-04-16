@@ -37,17 +37,22 @@
 
 -(BOOL)logStudent
 {
-    NSLog(@"%@ %@ ID:[%@]", self.firstName, self.lastName, self.studentId);
+    NSLog(@"Student %@ %@ ID:[%@]", self.firstName, self.lastName, self.studentId);
     return YES;
 }
 
 
--(BOOL)dayTasks
+-(BOOL)dayAssignment
 {
-    NSLog(@"Today you have a new assignment in todays %@-class.", self.course);
+    NSLog(@"You have a new %@-assignment.", self.course);
     return YES;
 }
 
+-(void)messageFromAdmin:(NSString *)message
+{
+    NSString *adminMessage = message;
+    NSLog(@"%@ du har ett nytt meddelande: %@", self.firstName, adminMessage);
+}
 
 
 @end

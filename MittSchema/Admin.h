@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StudentService.h"
+#import "Student.h"
 
 @interface Admin : NSObject
 
@@ -15,5 +17,9 @@
 
 -(id)initWithUserName:(NSString *)userName
              password:(NSString *)password;
+
+-(BOOL)messageToStudent:(Student *)student message:(NSString *)message;
+//-(BOOL)messageToAllStudents:(NSDictionary *)students message:(NSString *)message;
+
 
 @end

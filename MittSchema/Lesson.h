@@ -18,10 +18,17 @@
 @property (nonatomic, copy) NSString *startTime;
 @property (nonatomic, copy) NSString *endTime;
 @property (nonatomic, copy) NSString *assignment;
-@property (nonatomic, copy) NSString *message;
 
--(BOOL)addLesson:(Student *)student : (Course *)course;
+-(id)initWithLessonName:(NSString *) lessonName
+              classroom:(NSString *) classroom
+                teacher:(NSString *) teacher
+              startTime:(NSString *) startTime
+                endTime:(NSString *) endTime
+             assignment:(NSString *) assignment;
 
--(BOOL)setLessonPropertiesWithParameters:(NSString *) classroom : (NSString *) teacher: (NSString *) startTime: (NSString *) endTime : (NSString *) assignment : (NSString *) message;
+// -(BOOL)addLesson:(Student *)student : (Course *)course;
+
+-(BOOL)writeMessage;
+
 
 @end

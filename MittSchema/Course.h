@@ -12,18 +12,8 @@
 @interface Course : NSObject;
 
 @property(nonatomic, copy) NSString *courseName;
-@property(nonatomic, copy) NSString *teacher;
-@property(nonatomic, copy) NSString *date;
-@property(nonatomic, copy) NSString *classroom;
-@property(nonatomic, copy) NSString *assignment;
-@property(nonatomic, copy) NSString *message;
 
--(id)initWithCourseName:(NSString *) courseName
-                teacher:(NSString *) teacher
-                   date:(NSString *) date
-              classroom:(NSString *) classroom
-             assignment:(NSString *) assignment
-                message:(NSString *) message;
+-(id)initWithCourseName:(NSString *) courseName;
 
 -(BOOL)writeMessage;
 

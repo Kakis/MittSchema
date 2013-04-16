@@ -10,18 +10,44 @@
 
 @implementation Lesson
 
--(BOOL)addLesson:(Student *)student : (Course *)course
+- (id)init
 {
-    // Om du är admin med rätt lösenord får du sätta nedanstående... INTE ANNARS
-    if (student.course == course.courseName){
-        self.assignment = course.assignment;
-    }
-    return YES;
+    return [self initWithLessonName:@"" classroom:@"" teacher:@"" startTime:@"" endTime:@"" assignment:@""];
 }
 
-- (BOOL)setLessonPropertiesWithParameters:(NSString *)classroom :(NSString *)teacher :(NSString *)startTime :(NSString *)endTime :(NSString *)assignment :(NSString *)message
+- (id)initWithLessonName:(NSString *)lessonName
+               classroom:(NSString *)classroom
+                 teacher:(NSString *)teacher
+               startTime:(NSString *)startTime
+                 endTime:(NSString *)endTime
+              assignment:(NSString *)assignment
 {
-    [self.classroom ]
+    self = [super init];
+    
+    if (self) {
+        self.lessonName = lessonName;
+        self.classroom = classroom;
+        self.teacher = teacher;
+        self.startTime = startTime;
+        self.endTime = endTime;
+        self.assignment = assignment;
+    }
+    return self;
+}
+
+//-(BOOL)addLesson:(Student *)student : (Course *)course
+//{
+//    // Om du är admin med rätt lösenord får du sätta nedanstående... INTE ANNARS
+//    if (student.course == course.courseName){
+//        self.assignment = course.assignment;
+//    }
+//    return YES;
+//}
+
+-(BOOL)writeMessage
+{
+    NSLog(@"Your %@-teacher %@ wants you to %@ until next lesson %@.", self.lessonName, self.teacher, self.assignment, self.startTime);
+    return YES;
 }
 
 
