@@ -15,7 +15,5 @@
 
 -(id)initWithCourseName:(NSString *) courseName;
 
--(BOOL)writeMessage;
-
 
 @end

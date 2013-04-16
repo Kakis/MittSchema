@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "StudentService.h"
-#import "CourseService.h"
 #import "Lesson.h"
 #import "Student.h"
 #import "Course.h"
