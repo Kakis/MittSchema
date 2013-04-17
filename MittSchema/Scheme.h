@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Lesson.h"
 
 @interface Scheme : NSObject
 
@@ -16,11 +17,15 @@
 @property (nonatomic, copy) NSDictionary *thursdayScheme;
 @property (nonatomic, copy) NSDictionary *fridayScheme;
 
--(id)initWithWeekScheme:(NSArray *)weekScheme
-                 monday:(NSDictionary *) monday
-                 tuesday:(NSDictionary *) tuesday
-                 wednesday:(NSDictionary *) wednesday
-                 thursday:(NSDictionary *) thursday
-                 friday:(NSDictionary *) friday;
+-(id)initWithLessons:(NSArray *)lessonsToAdd;
+
+//-(id)initWithWeekScheme:(NSArray *)weekScheme
+//                 monday:(NSDictionary *) monday
+//                 tuesday:(NSDictionary *) tuesday
+//                 wednesday:(NSDictionary *) wednesday
+//                 thursday:(NSDictionary *) thursday
+//                 friday:(NSDictionary *) friday;
+
+-(BOOL)addLesson:(Lesson *)lesson;
 
 @end

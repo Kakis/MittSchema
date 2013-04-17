@@ -12,12 +12,13 @@
 
 - (id)init
 {
-    return [self initWithLessonName:@"" classroom:@"" teacher:@"" startTime:@"" endTime:@"" assignment:@""];
+    return [self initWithLessonName:@"" classroom:@"" teacher:@"" lessonDay:@"" startTime:@"" endTime:@"" assignment:@""];
 }
 
 - (id)initWithLessonName:(NSString *)lessonName
                classroom:(NSString *)classroom
                  teacher:(NSString *)teacher
+               lessonDay:(NSString *)lessonDay
                startTime:(NSString *)startTime
                  endTime:(NSString *)endTime
               assignment:(NSString *)assignment
@@ -28,6 +29,7 @@
         self.lessonName = lessonName;
         self.classroom = classroom;
         self.teacher = teacher;
+        self.lessonDay = lessonDay;
         self.startTime = startTime;
         self.endTime = endTime;
         self.assignment = assignment;
@@ -46,7 +48,7 @@
 
 -(BOOL)writeMessage
 {
-    NSLog(@"Your %@-teacher %@ wants you to %@ until next lesson %@.", self.lessonName, self.teacher, self.assignment, self.startTime);
+    NSLog(@"Your %@-teacher %@ wants you to %@ until next lesson %@.", self.lessonName, self.teacher, self.assignment, self.lessonDay);
     return YES;
 }
 

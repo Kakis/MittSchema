@@ -63,26 +63,43 @@ int main(int argc, const char * argv[])
     
         //////////////////////////////////////////// Init of Lessons /////////////////////////////////////////////
         
-        Lesson *Appdev = [[Lesson alloc] initWithLessonName:@"appdev"
+        Lesson *Appdev1 = [[Lesson alloc] initWithLessonName:@"appdev1"
                                                   classroom:@"sal 32"
                                                     teacher:@"Tom"
+                                                  lessonDay:@"monday"
                                                   startTime:@"09.00"
                                                     endTime:@"10.00"
                                                  assignment:@"read chapter: Collection classes"];
         
-        Lesson *Math = [[Lesson alloc] initWithLessonName:@"math"
-                                                classroom:@"sal 41"
-                                                  teacher:@"Lennart"
-                                                startTime:@"09.00"
-                                                  endTime:@"10.00"
-                                               assignment:@"read chapter: Addition"];
+        Lesson *Appdev2 = [[Lesson alloc] initWithLessonName:@"appdev2"
+                                                  classroom:@"sal 32"
+                                                    teacher:@"Tom"
+                                                   lessonDay:@"tuesday"
+                                                  startTime:@"09.00"
+                                                    endTime:@"10.00"
+                                                 assignment:@"read chapter: NSURLConnection"];
         
-        Lesson *English = [[Lesson alloc] initWithLessonName:@"english"
-                                                   classroom:@"sal 54"
+        Lesson *Appdev3 = [[Lesson alloc] initWithLessonName:@"appdev3"
+                                                   classroom:@"sal 32"
                                                      teacher:@"Tom"
+                                                   lessonDay:@"friday"
                                                    startTime:@"09.00"
                                                      endTime:@"10.00"
-                                                  assignment:@"read chapter: The ride"];
+                                                  assignment:@"read about: GitHub"];
+        
+//        Lesson *Math = [[Lesson alloc] initWithLessonName:@"math"
+//                                                classroom:@"sal 41"
+//                                                  teacher:@"Lennart"
+//                                                startTime:@"09.00"
+//                                                  endTime:@"10.00"
+//                                               assignment:@"read chapter: Addition"];
+//        
+//        Lesson *English = [[Lesson alloc] initWithLessonName:@"english"
+//                                                   classroom:@"sal 54"
+//                                                     teacher:@"Tom"
+//                                                   startTime:@"09.00"
+//                                                     endTime:@"10.00"
+//                                                  assignment:@"read chapter: The ride"];
         
         
         /////////////////////////////////////////////////  Logs //////////////////////////////////////////////////
@@ -96,19 +113,22 @@ int main(int argc, const char * argv[])
         
         [student1 logStudent];
         [student1 dayAssignment];
-        [English writeMessage];
+        //[English writeMessage];
         
         puts("");
         
         [student2 logStudent];
         [student2 dayAssignment];
-        [Math writeMessage];
+        //[Math writeMessage];
         
         puts("");
         
         [student3 logStudent];
         [student3 dayAssignment];
-        [Appdev writeMessage];
+        
+        [Appdev1 writeMessage];
+        [Appdev2 writeMessage];
+        [Appdev3 writeMessage];
         
         //puts("\n   removing a student   \n");
         //
