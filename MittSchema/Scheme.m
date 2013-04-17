@@ -69,7 +69,7 @@ static NSString * const fridayKey = @"friday_key";
         [lessons[fridayKey] addObject:lesson];
         
     } else {
-        return nil;
+        return NO;
         // Why does'nt nil work?
     }
     return YES;

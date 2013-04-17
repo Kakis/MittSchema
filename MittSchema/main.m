@@ -32,17 +32,19 @@ int main(int argc, const char * argv[])
         
         Student *student2 = [[Student alloc] initWithLastName:@"Bergkvist"
                                                     firstName:@"Kristoffer"
-                                                       course:@"english"];
+                                                       course:@"appdev"];
         
         Student *student3 = [[Student alloc] initWithLastName:@"Sjöstrand Gereholt"
                                                     firstName:@"Amelie"
-                                                       course:@"math"];
+                                                       course:@"appdev"];
         
         StudentService *students = [[StudentService alloc] init];
         
         [students addStudent:student1];
         [students addStudent:student2];
         [students addStudent:student3];
+        
+        [students saveToFile:@"/Users/Jens/Desktop/students.json"];
         
         
         //////////////////////////////////////////// Init of Courses /////////////////////////////////////////////

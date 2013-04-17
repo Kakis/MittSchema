@@ -7,10 +7,13 @@
 //
 
 #import "StudentService.h"
+#import "Student+Json.h"
+#import "Student.h"
 
-static NSString * const englishKey = @"english_key";
-static NSString * const mathKey = @"math_key";
+
+static NSString * const javaKey = @"java_key";
 static NSString * const appdevKey = @"appdev_Key";
+static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json";
 
 @implementation StudentService
 {
@@ -27,8 +30,7 @@ static NSString * const appdevKey = @"appdev_Key";
     self = [super init];
     
     if (self) {
-        students = @{englishKey: [[NSMutableSet alloc] init],
-                     mathKey: [[NSMutableSet alloc] init],
+        students = @{javaKey: [[NSMutableSet alloc] init],
                      appdevKey: [[NSMutableSet alloc] init]
                      };
     }
@@ -37,17 +39,74 @@ static NSString * const appdevKey = @"appdev_Key";
 
 -(BOOL)addStudent:(Student *)student
 {
-    if([student.course isEqualToString:@"english"]){
-        [students[englishKey] addObject:student];
-        
-    } else if ([student.course isEqualToString:@"math"]){
-        [students[mathKey] addObject:student];
-        
+    if([student.course isEqualToString:@"java"]){
+        [students[javaKey] addObject:student];
     } else {
         [students[appdevKey] addObject:student];
     }
     return YES;
 }
 
+#pragma mark Serializing to Json helper method
+
+-(NSArray *) serializeCollectionToJson:(id) objects
+{
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    
+    for(id<JsonFormat> object in objects){
+        [result addObject:[object jsonValue]];
+    }
+    return result;
+}
+
+
+#pragma mark - Save and load
+-(void) saveToFile:(NSString*) fileName
+{
+    NSDictionary *studentsAsJson = @{@"students" : [self serializeCollectionToJson:[self allStudents]]};
+    
+    NSData *studentsAsData = [NSJSONSerialization dataWithJSONObject:studentsAsJson
+                                                             options:NSJSONWritingPrettyPrinted
+                                                               error:NULL];
+    
+    [studentsAsData writeToFile:fileName atomically:YES];
+}
+
+//-(void) readFromFile:(NSString*) fileName
+//{
+//    
+//}
+
+
+-(NSSet*) allStudents
+{
+    //Returns a set with students from all courses
+    return [students[javaKey]setByAddingObjectsFromSet:students[appdevKey]];
+}
+
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

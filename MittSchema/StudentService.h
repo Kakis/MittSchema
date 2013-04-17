@@ -16,8 +16,11 @@
 @interface StudentService : NSObject
 
 -(id)initWithStudents:(NSArray *)studentsToAdd;
-
 -(BOOL)addStudent:(Student *)student;
+
+#pragma mark - Save and load
+-(void) saveToFile:(NSString*) fileName;
+//-(void) readFromFile:(NSString*) fileName;
 
 
 @end
