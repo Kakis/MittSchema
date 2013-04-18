@@ -25,5 +25,8 @@
 
 -(void)messageFromAdmin:(NSString *)message;
 
+#pragma mark - Student from Json
++(id) studentFromJson:(NSDictionary*) studentAsJson;
+
 
 @end

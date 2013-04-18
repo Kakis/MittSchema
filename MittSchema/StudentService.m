@@ -33,13 +33,24 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
         students = @{javaKey: [[NSMutableSet alloc] init],
                      appdevKey: [[NSMutableSet alloc] init]
                      };
+        
+//        // Add students
+//        for(Student *student in studentsToAdd)
+//        {
+//            [self addStudent:student];
+//        }
+//        
+//        [self readFromFile:savedStateFileName];
     }
+    
     return self;
 }
 
+
 -(BOOL)addStudent:(Student *)student
 {
-    if([student.course isEqualToString:@"java"]){
+    if([student.course isEqualToString:@"java"])
+    {
         [students[javaKey] addObject:student];
     } else {
         [students[appdevKey] addObject:student];
@@ -47,20 +58,21 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
     return YES;
 }
 
-#pragma mark Serializing to Json helper method
 
+#pragma mark Serializing to Json helper method
 -(NSArray *) serializeCollectionToJson:(id) objects
 {
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
-    for(id<JsonFormat> object in objects){
+    for(id<JsonFormat> object in objects)
+    {
         [result addObject:[object jsonValue]];
     }
     return result;
 }
 
 
-#pragma mark - Save and load
+#pragma mark - Save and Load all students
 -(void) saveToFile:(NSString*) fileName
 {
     NSDictionary *studentsAsJson = @{@"students" : [self serializeCollectionToJson:[self allStudents]]};
@@ -68,13 +80,24 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
     NSData *studentsAsData = [NSJSONSerialization dataWithJSONObject:studentsAsJson
                                                              options:NSJSONWritingPrettyPrinted
                                                                error:NULL];
-    
     [studentsAsData writeToFile:fileName atomically:YES];
 }
 
+
 //-(void) readFromFile:(NSString*) fileName
 //{
+//    NSData *studentsAsData = [NSData dataWithContentsOfFile:fileName];
 //    
+//    if(studentsAsData)
+//    {
+//        NSDictionary *studentsAsJson = [NSJSONSerialization JSONObjectWithData:studentsAsData
+//                                                                       options:0
+//                                                                         error:NULL];
+//        for(NSDictionary *student in studentsAsJson[@"students"])
+//        {
+//            [self addStudent:[Student studentFromJson:student]];
+//        }
+//    }
 //}
 
 

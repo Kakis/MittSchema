@@ -10,6 +10,17 @@
 
 @implementation Student
 
++(id) studentFromJson:(NSDictionary *)studentAsJson
+{
+    Student *student = [[self alloc] init];
+    student->_studentId = studentAsJson[@"studentId"];
+    student.lastName = studentAsJson[@"lastName"];
+    student.firstName = studentAsJson[@"firstName"];
+    student.course = studentAsJson[@"course"];
+    
+    return student;
+}
+
 -(id)init
 {
     return [self initWithLastName:@"" firstName:@"" course:@""];

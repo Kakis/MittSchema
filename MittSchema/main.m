@@ -44,6 +44,9 @@ int main(int argc, const char * argv[])
         [students addStudent:student2];
         [students addStudent:student3];
         
+        
+        //[students readFromFile:@"/Users/Jens/Desktop/students.json"];
+        
         [students saveToFile:@"/Users/Jens/Desktop/students.json"];
         
         
