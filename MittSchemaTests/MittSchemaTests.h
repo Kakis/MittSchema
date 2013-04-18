@@ -1,5 +1,5 @@
 //
-//  StudentseviceTests.h
+//  MittSchemaTests.h
 //  MittSchema
 //
 //  Created by Jens Hagfeldt on 2013-04-18.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface StudentseviceTests : SenTestCase
+@interface MittSchemaTests : SenTestCase
 
 @end

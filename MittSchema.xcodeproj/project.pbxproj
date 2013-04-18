@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B423F018171EE0D10072CFA9 /* Student+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B423F017171EE0D10072CFA9 /* Student+Json.m */; };
 		B423F019171EE0D10072CFA9 /* Student+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B423F017171EE0D10072CFA9 /* Student+Json.m */; };
-		B42EAAD2171FEBE80093117E /* StudentseviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42EAAD1171FEBE70093117E /* StudentseviceTests.m */; };
+		B42EAAD8171FF1BB0093117E /* MittSchemaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42EAAD7171FF1BA0093117E /* MittSchemaTests.m */; };
 		B4481809171089D20054926B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4481808171089D20054926B /* Foundation.framework */; };
 		B448180C171089D20054926B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B448180B171089D20054926B /* main.m */; };
 		B4481810171089D20054926B /* MittSchema.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B448180F171089D20054926B /* MittSchema.1 */; };
@@ -44,8 +44,8 @@
 		B423F011171EDEB50072CFA9 /* JsonFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonFormat.h; sourceTree = "<group>"; };
 		B423F016171EE0D10072CFA9 /* Student+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+Json.h"; sourceTree = "<group>"; };
 		B423F017171EE0D10072CFA9 /* Student+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+Json.m"; sourceTree = "<group>"; };
-		B42EAAD0171FEBE70093117E /* StudentseviceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentseviceTests.h; sourceTree = "<group>"; };
-		B42EAAD1171FEBE70093117E /* StudentseviceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentseviceTests.m; sourceTree = "<group>"; };
+		B42EAAD6171FF1BA0093117E /* MittSchemaTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittSchemaTests.h; sourceTree = "<group>"; };
+		B42EAAD7171FF1BA0093117E /* MittSchemaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittSchemaTests.m; sourceTree = "<group>"; };
 		B4481805171089D20054926B /* MittSchema */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MittSchema; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4481808171089D20054926B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B448180B171089D20054926B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -173,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				B4612E2117154D9800E0B6C5 /* Supporting Files */,
-				B42EAAD0171FEBE70093117E /* StudentseviceTests.h */,
-				B42EAAD1171FEBE70093117E /* StudentseviceTests.m */,
+				B42EAAD6171FF1BA0093117E /* MittSchemaTests.h */,
+				B42EAAD7171FF1BA0093117E /* MittSchemaTests.m */,
 			);
 			path = MittSchemaTests;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				B4C76A531716D5A3003253D2 /* Admin.m in Sources */,
 				B46FB90F171C0065009D2F1B /* Lesson.m in Sources */,
 				B423F019171EE0D10072CFA9 /* Student+Json.m in Sources */,
-				B42EAAD2171FEBE80093117E /* StudentseviceTests.m in Sources */,
+				B42EAAD8171FF1BB0093117E /* MittSchemaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
