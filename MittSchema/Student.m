@@ -13,10 +13,11 @@
 +(id) studentFromJson:(NSDictionary *)studentAsJson
 {
     Student *student = [[self alloc] init];
-    student->_studentId = studentAsJson[@"studentId"];
     student.lastName = studentAsJson[@"lastName"];
     student.firstName = studentAsJson[@"firstName"];
     student.course = studentAsJson[@"course"];
+    student->_studentId = studentAsJson[@"studentId"];
+    student->_studentRev = studentAsJson[@"studentRev"];
     
     return student;
 }
@@ -37,6 +38,7 @@
         self.firstName = firstName;
         self.course = course;
         self->_studentId = [[NSUUID UUID] UUIDString];
+        self->_studentRev = [[NSUUID UUID] UUIDString];
     }
     return self;
 }
@@ -67,7 +69,7 @@
 
 -(BOOL)logStudent
 {
-    NSLog(@"Student %@ %@ ID:[%@]", self.firstName, self.lastName, self.studentId);
+    NSLog(@"Student %@ %@ ID:[%@] REV:[%@]", self.firstName, self.lastName, self.studentId, self.studentRev);
     return YES;
 }
 

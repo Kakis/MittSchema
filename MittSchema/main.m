@@ -34,8 +34,12 @@ int main(int argc, const char * argv[])
                                                     firstName:@"Kristoffer"
                                                        course:@"appdev"];
         
-        Student *student3 = [[Student alloc] initWithLastName:@"Sjöstrand Gereholt"
+        Student *student3 = [[Student alloc] initWithLastName:@"Sjöstrand"
                                                     firstName:@"Amelie"
+                                                       course:@"appdev"];
+        
+        Student *student4 = [[Student alloc] initWithLastName:@"Nygård"
+                                                    firstName:@"Stefan"
                                                        course:@"appdev"];
         
         StudentService *students = [[StudentService alloc] init];
@@ -43,11 +47,11 @@ int main(int argc, const char * argv[])
         [students addStudent:student1];
         [students addStudent:student2];
         [students addStudent:student3];
-        
+        [students addStudent:student4];
         
         //[students readFromFile:@"/Users/Jens/Desktop/students.json"];
         
-        [students saveToFile:@"/Users/Jens/Desktop/students.json"];
+        [students saveStudent:student4];
         
         
         //////////////////////////////////////////// Init of Courses /////////////////////////////////////////////
@@ -141,6 +145,10 @@ int main(int argc, const char * argv[])
         //NSLog(@"Student %@ %@ was removed", student4.firstName, student4.lastName);
         
     }
+    
+    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+    [loop run];
+    
     return 0;
 }
 

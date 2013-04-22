@@ -9,8 +9,9 @@
 
 #import "MittSchemaTests.h"
 #import "StudentService.h"
-#import "Lesson.h"
+#import "Student.h"
 #import "Scheme.h"
+#import "Lesson.h"
 
 
 static NSString * const javaKey = @"java_key";
@@ -66,18 +67,18 @@ static NSString * const fridayKey = @"friday_key";
     lessons = nil;
 }
 
+//-(void)testAddStudent
+//{
+//    BOOL addedStudent = [students add];
+//    STAssertTrue(addedStudent, @"En student skulle lagts till.");
+//}
 
--(void)addStudent
-{
-    BOOL addedStudent = [students[appdevKey] addStudent:testStudent];
-    STAssertTrue(addedStudent, @"En student skulle lagts till.");
-}
+//-(void)testAddLesson
+//{
+//    BOOL addedLesson = [lessons[mondayKey] addLesson:testLesson];
+//    STAssertTrue(addedLesson, @"En lektion skullel lagts till.");
+//}
 
--(void)addLesson
-{
-    BOOL addedLesson = [lessons[mondayKey] addLesson:testLesson];
-    STAssertTrue(addedLesson, @"En lektion skullel lagts till.");
-}
 
 @end
 

@@ -18,12 +18,15 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 @implementation StudentService
 {
     NSDictionary *students;
+    NSOperationQueue *queue;
 }
+
 
 - (id)init
 {
     return [self initWithStudents:@[]];
 }
+
 
 - (id)initWithStudents:(NSArray *)studentsToAdd
 {
@@ -33,14 +36,8 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
         students = @{javaKey: [[NSMutableSet alloc] init],
                      appdevKey: [[NSMutableSet alloc] init]
                      };
+        queue = [[NSOperationQueue alloc] init];
         
-//        // Add students
-//        for(Student *student in studentsToAdd)
-//        {
-//            [self addStudent:student];
-//        }
-//        
-//        [self readFromFile:savedStateFileName];
     }
     
     return self;
@@ -72,17 +69,79 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 }
 
 
-#pragma mark - Save and Load all students
--(void) saveToFile:(NSString*) fileName
+#pragma mark - Save a student
+
+-(void) saveStudent:(Student *)student
 {
-    NSDictionary *studentsAsJson = @{@"students" : [self serializeCollectionToJson:[self allStudents]]};
+    // Serialiserar en student till JSON-format
+    NSDictionary *studentAsJson = [self serializeStudentToJson:student];
     
-    NSData *studentsAsData = [NSJSONSerialization dataWithJSONObject:studentsAsJson
-                                                             options:NSJSONWritingPrettyPrinted
-                                                               error:NULL];
-    [studentsAsData writeToFile:fileName atomically:YES];
+    // Skapar ett NSData-objekt som håller i en JSON-formaterad student
+    NSData *studentAsData = [NSJSONSerialization dataWithJSONObject:studentAsJson
+                                                           options:NSJSONWritingPrettyPrinted
+                                                             error:NULL];
+    
+    // Sätter adressen till min databas som url
+    NSURL *url = [NSURL URLWithString:@"http://kakis.iriscouch.com/students"];
+    
+    // Skapar en request från min url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[url standardizedURL]];
+    
+    // Sätter HTTP metoden till POST
+    [request setHTTPMethod:@"POST"];
+    
+    // Ställer i HTTP headern in att jag kommer att skicka värden av typen application/json 
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    
+    // Lägger min student i HTTP bodyn
+    [request setHTTPBody:studentAsData];
+    
+    // Skapar min NSURLConnection
+    NSURLConnection *connection = [NSURLConnection connectionWithRequest:request delegate:nil];
+    [connection start];
 }
 
+
+-(id)serializeStudentToJson:(id) object
+{
+    NSObject *result = [[NSObject alloc] init];
+    result = [object jsonValue];
+    return result;
+}
+
+
+//#pragma mark - Load all students
+//
+//-(void)loadStudent:(Student *)student
+//{
+//    //Initierar två NSMutableData att hålla/ta emot den student vi laddar ned
+//    NSMutableData *data = [[NSMutableData alloc] init];
+//    NSMutableData *receivedData = data;
+//    
+//    // Sätter adressen vi ska hämta ifrån till min databas
+//    NSURL *url = [NSURL URLWithString:@"http://kakis.iriscouch.com/students"];
+//    
+//    // Skapar en request från vår url
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//    
+//    // Vi säger att vi vill få tillbaka json-värden med vår HTTP-förfrågan
+//    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+//    
+//    // Skapar ett response
+//    NSURLResponse *response = [[NSURLResponse alloc] init];
+//    [receivedData appendData:[NSURLConnection sendSynchronousRequest:request
+//                                                   returningResponse:response
+//                                                               error:nil]];
+//    
+//    // Skapar min NSURLConnection                         //ev ska det kanske vara delegate:nil
+//    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+//    [connection start];
+//}
+
+//-(void)loadStudent:(Student *)student
+//{
+//    
+//}
 
 //-(void) readFromFile:(NSString*) fileName
 //{

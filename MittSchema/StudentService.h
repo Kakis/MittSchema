@@ -19,7 +19,10 @@
 -(BOOL)addStudent:(Student *)student;
 
 #pragma mark - Save and load
--(void) saveToFile:(NSString*) fileName;
+-(void) saveStudent:(Student *)student;
+//-(void) loadStudent:(Student *)student;
+-(id)serializeStudentToJson:(id) object;
+//-(void) saveToFile:(NSString*) fileName;
 //-(void) readFromFile:(NSString*) fileName;
 
 

@@ -10,6 +10,9 @@
 		B423F018171EE0D10072CFA9 /* Student+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B423F017171EE0D10072CFA9 /* Student+Json.m */; };
 		B423F019171EE0D10072CFA9 /* Student+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B423F017171EE0D10072CFA9 /* Student+Json.m */; };
 		B42EAAD8171FF1BB0093117E /* MittSchemaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42EAAD7171FF1BA0093117E /* MittSchemaTests.m */; };
+		B42EAADA1720038D0093117E /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E375FD1713FD3C0010ED97 /* StudentService.m */; };
+		B42EAADB172003950093117E /* Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E37600171421B70010ED97 /* Scheme.m */; };
+		B42EAADC172003BC0093117E /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B957D61712DDAE00ACA1D4 /* Course.m */; };
 		B4481809171089D20054926B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4481808171089D20054926B /* Foundation.framework */; };
 		B448180C171089D20054926B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B448180B171089D20054926B /* main.m */; };
 		B4481810171089D20054926B /* MittSchema.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B448180F171089D20054926B /* MittSchema.1 */; };
@@ -306,6 +309,9 @@
 				B46FB90F171C0065009D2F1B /* Lesson.m in Sources */,
 				B423F019171EE0D10072CFA9 /* Student+Json.m in Sources */,
 				B42EAAD8171FF1BB0093117E /* MittSchemaTests.m in Sources */,
+				B42EAADA1720038D0093117E /* StudentService.m in Sources */,
+				B42EAADB172003950093117E /* Scheme.m in Sources */,
+				B42EAADC172003BC0093117E /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
