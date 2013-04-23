@@ -6,6 +6,13 @@
 //  Copyright (c) 2013 Jens Hagfeldt. All rights reserved.
 //
 
+// Min view som hittar alla studenters id'n är: http://kakis.iriscouch.com/_utils/database.html?students/_design/students/_view/studentId
+//
+// Min andra view som hittar alla studenternas första namn är: http://kakis.iriscouch.com/_utils/database.html?students/_design/students/_view/firstName
+//
+// Min tredje view som hittar vilken kurs alla studenter går är: http://kakis.iriscouch.com/_utils/database.html?students/_design/students/_view/course
+
+
 #import "StudentService.h"
 #import "Student+Json.h"
 #import "Student.h"

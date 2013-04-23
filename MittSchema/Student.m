@@ -16,8 +16,8 @@
     student.lastName = studentAsJson[@"lastName"];
     student.firstName = studentAsJson[@"firstName"];
     student.course = studentAsJson[@"course"];
-    student->_studentId = studentAsJson[@"studentId"];
-    student->_studentRev = studentAsJson[@"studentRev"];
+    student->_id = studentAsJson[@"id"];
+    student->_rev = studentAsJson[@"rev"];
     
     return student;
 }
@@ -37,8 +37,8 @@
         self.lastName = lastName;
         self.firstName = firstName;
         self.course = course;
-        self->_studentId = [[NSUUID UUID] UUIDString];
-        self->_studentRev = [[NSUUID UUID] UUIDString];
+        self->_id = [[NSUUID UUID] UUIDString];
+        self->_rev = [[NSUUID UUID] UUIDString];
     }
     return self;
 }
@@ -46,7 +46,7 @@
 
 -(NSUInteger)hash
 {
-    return 37 * [self.studentId hash];
+    return 37 * [self.id hash];
 }
 
 
@@ -60,7 +60,7 @@
     // if other is not nil AND is member of same class as we (self)
     if(other && [other isMemberOfClass:[self class]]){
         // comapre studentId's
-        return [[other studentId] isEqualToString:self.studentId];
+        return [[other id] isEqualToString:self.id];
     }
     // we are not equal
     return NO;
@@ -69,7 +69,7 @@
 
 -(BOOL)logStudent
 {
-    NSLog(@"Student %@ %@ ID:[%@] REV:[%@]", self.firstName, self.lastName, self.studentId, self.studentRev);
+    NSLog(@"Student %@ %@ ID:[%@] REV:[%@]", self.firstName, self.lastName, self.id, self.rev);
     return YES;
 }
 

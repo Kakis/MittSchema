@@ -48,10 +48,13 @@ int main(int argc, const char * argv[])
         [students addStudent:student2];
         [students addStudent:student3];
         [students addStudent:student4];
-        
+    
         //[students readFromFile:@"/Users/Jens/Desktop/students.json"];
         
-        [students saveStudent:student4];
+//        [students saveStudent:student1];
+//        [students saveStudent:student2];
+//        [students saveStudent:student3];
+//        [students saveStudent:student4];
         
         
         //////////////////////////////////////////// Init of Courses ////////////////////////////////////////////

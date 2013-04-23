@@ -13,8 +13,8 @@
 @property (nonatomic, copy) NSString *lastName;
 @property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *course;
-@property (nonatomic, copy, readonly) NSString *studentId;
-@property (nonatomic, copy) NSString *studentRev;
+@property (nonatomic, copy, readonly) NSString *id;
+@property (nonatomic, copy) NSString *rev;
 
 -(id)initWithLastName:(NSString *) lastName
             firstName:(NSString *) firstName
