@@ -18,8 +18,11 @@
 -(id)initWithUserName:(NSString *)userName
              password:(NSString *)password;
 
--(BOOL)messageToStudent:(Student *)student message:(NSString *)message;
-//-(BOOL)messageToAllStudents:(NSDictionary *)students message:(NSString *)message;
+-(BOOL)messageToStudent:(Student *)student
+                message:(NSString *)message;
+
+-(BOOL)messageToAllStudents:(NSDictionary *)students
+                    message:(NSString *)message;
 
 
 @end

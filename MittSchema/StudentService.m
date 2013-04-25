@@ -43,6 +43,7 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
         students = @{javaKey: [[NSMutableSet alloc] init],
                      appdevKey: [[NSMutableSet alloc] init]
                      };
+        
         queue = [[NSOperationQueue alloc] init];
         
     }
@@ -63,19 +64,6 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 }
 
 
-#pragma mark Serializing to Json helper method
--(NSArray *) serializeCollectionToJson:(id) objects
-{
-    NSMutableArray *result = [[NSMutableArray alloc] init];
-    
-    for(id<JsonFormat> object in objects)
-    {
-        [result addObject:[object jsonValue]];
-    }
-    return result;
-}
-
-
 #pragma mark - Save a student
 
 -(void) saveStudent:(Student *)student
@@ -85,8 +73,8 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
     
     // Skapar ett NSData-objekt som håller i en JSON-formaterad student
     NSData *studentAsData = [NSJSONSerialization dataWithJSONObject:studentAsJson
-                                                           options:NSJSONWritingPrettyPrinted
-                                                             error:NULL];
+                                                            options:NSJSONWritingPrettyPrinted
+                                                              error:NULL];
     
     // Sätter adressen till min databas som url
     NSURL *url = [NSURL URLWithString:@"http://kakis.iriscouch.com/students"];
@@ -145,26 +133,28 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 //    [connection start];
 //}
 
-//-(void)loadStudent:(Student *)student
-//{
-//    
+
+
+
+
+//-(void)getFromDatabase:(NSString *)studentId
+//          onCompletion:(AllStudentsResponse)allStudentsResponse {
+//
+// NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://kakis.iriscouch.com/students/%@", studentId]];
+//
+// NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+//
+// [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+//
+// [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+//                            
+// //Parse response från Json till anpassade jobb objekt och lägger till det i en NSArray
+// NSArray *readStudents = @[data];
+//
+// // Utför blocket som skickas som ett argument. Detta kommer att "ringa tillbaka" till uppringaren (aka callback)
+// allStudentsResponse(readStudents);
 //}
 
-//-(void) readFromFile:(NSString*) fileName
-//{
-//    NSData *studentsAsData = [NSData dataWithContentsOfFile:fileName];
-//    
-//    if(studentsAsData)
-//    {
-//        NSDictionary *studentsAsJson = [NSJSONSerialization JSONObjectWithData:studentsAsData
-//                                                                       options:0
-//                                                                         error:NULL];
-//        for(NSDictionary *student in studentsAsJson[@"students"])
-//        {
-//            [self addStudent:[Student studentFromJson:student]];
-//        }
-//    }
-//}
 
 
 -(NSSet*) allStudents

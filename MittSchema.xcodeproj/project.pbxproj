@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4183B801727E5B4005C72C8 /* DBConnectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4183B7F1727E5B4005C72C8 /* DBConnectionService.m */; };
+		B4183B811727E5B4005C72C8 /* DBConnectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4183B7F1727E5B4005C72C8 /* DBConnectionService.m */; };
 		B423F018171EE0D10072CFA9 /* Student+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B423F017171EE0D10072CFA9 /* Student+Json.m */; };
 		B423F019171EE0D10072CFA9 /* Student+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B423F017171EE0D10072CFA9 /* Student+Json.m */; };
 		B42EAAD8171FF1BB0093117E /* MittSchemaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42EAAD7171FF1BA0093117E /* MittSchemaTests.m */; };
@@ -44,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B4183B7E1727E5B4005C72C8 /* DBConnectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnectionService.h; sourceTree = "<group>"; };
+		B4183B7F1727E5B4005C72C8 /* DBConnectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnectionService.m; sourceTree = "<group>"; };
 		B423F011171EDEB50072CFA9 /* JsonFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonFormat.h; sourceTree = "<group>"; };
 		B423F016171EE0D10072CFA9 /* Student+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+Json.h"; sourceTree = "<group>"; };
 		B423F017171EE0D10072CFA9 /* Student+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+Json.m"; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				B4E37600171421B70010ED97 /* Scheme.m */,
 				B423F016171EE0D10072CFA9 /* Student+Json.h */,
 				B423F017171EE0D10072CFA9 /* Student+Json.m */,
+				B4183B7E1727E5B4005C72C8 /* DBConnectionService.h */,
+				B4183B7F1727E5B4005C72C8 /* DBConnectionService.m */,
 			);
 			path = MittSchema;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				B4C76A521716D5A3003253D2 /* Admin.m in Sources */,
 				B46FB90E171C0065009D2F1B /* Lesson.m in Sources */,
 				B423F018171EE0D10072CFA9 /* Student+Json.m in Sources */,
+				B4183B801727E5B4005C72C8 /* DBConnectionService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 				B42EAADA1720038D0093117E /* StudentService.m in Sources */,
 				B42EAADB172003950093117E /* Scheme.m in Sources */,
 				B42EAADC172003BC0093117E /* Course.m in Sources */,
+				B4183B811727E5B4005C72C8 /* DBConnectionService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

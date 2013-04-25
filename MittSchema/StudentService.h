@@ -12,6 +12,8 @@
 #import "Scheme.h"
 #import "Admin.h"
 
+//typedef void (^AllStudentsResponse)(NSArray *allReadStudents);
+
 
 @interface StudentService : NSObject
 
@@ -22,8 +24,13 @@
 -(void) saveStudent:(Student *)student;
 //-(void) loadStudent:(Student *)student;
 -(id)serializeStudentToJson:(id) object;
+
 //-(void) saveToFile:(NSString*) fileName;
 //-(void) readFromFile:(NSString*) fileName;
+
+
+//-(void)getFromDatabase:(NSString*)studentId
+//          onCompletion:(AllStudentsResponse) allStudentsResponse;
 
 
 @end

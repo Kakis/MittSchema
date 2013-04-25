@@ -70,7 +70,6 @@ static NSString * const fridayKey = @"friday_key";
         
     } else {
         return NO;
-        // Why does'nt nil work?
     }
     return YES;
 }

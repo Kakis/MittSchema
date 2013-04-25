@@ -20,7 +20,6 @@
     selfAsJson[@"course"] = self.course;
     
     return selfAsJson;
-    
 }
 
 

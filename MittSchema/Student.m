@@ -24,7 +24,9 @@
 
 -(id)init
 {
-    return [self initWithLastName:@"" firstName:@"" course:@""];
+    return [self initWithLastName:@""
+                        firstName:@""
+                           course:@""];
 }
 
 -(id)initWithLastName:(NSString *) lastName
@@ -74,16 +76,16 @@
 }
 
 
--(BOOL)dayAssignment
-{
-    NSLog(@"You have a new %@-assignment.", self.course);
-    return YES;
-}
+//-(BOOL)dayAssignment
+//{
+//    NSLog(@"You have a new %@-assignment.", self.course);
+//    return YES;
+//}
 
 -(BOOL)messageFromAdmin:(NSString *)message
 {
     NSString *adminMessage = message;
-    NSLog(@"%@ du har ett nytt meddelande: %@", self.firstName, adminMessage);
+    NSLog(@"%@ you have a new message: %@", self.firstName, adminMessage);
     return YES;
 }
 

@@ -12,7 +12,13 @@
 
 - (id)init
 {
-    return [self initWithLessonName:@"" classroom:@"" teacher:@"" lessonDay:@"" startTime:@"" endTime:@"" assignment:@""];
+    return [self initWithLessonName:@""
+                          classroom:@""
+                            teacher:@""
+                          lessonDay:@""
+                          startTime:@""
+                            endTime:@""
+                         assignment:@""];
 }
 
 - (id)initWithLessonName:(NSString *)lessonName
@@ -48,7 +54,8 @@
 
 -(BOOL)writeMessage
 {
-    NSLog(@"Your %@-teacher %@ wants you to %@ until next lesson %@.", self.lessonName, self.teacher, self.assignment, self.lessonDay);
+    //NSLog(@"Your %@-teacher %@ wants you to %@ until next lesson %@.", self.lessonName, self.teacher, self.assignment, self.lessonDay);
+    NSLog(@"At %@s %@-lesson with %@ in %@ kl: %@-%@ your assignment is to %@.", self.lessonDay, self.lessonName, self.teacher, self.classroom, self.startTime, self.endTime, self.assignment);
     return YES;
 }
 
