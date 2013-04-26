@@ -69,9 +69,9 @@
 }
 
 
--(BOOL)logStudent
+-(BOOL)logStudentAttributes
 {
-    NSLog(@"Student %@ %@ ID:[%@] REV:[%@]", self.firstName, self.lastName, self.id, self.rev);
+    NSLog(@"Student %@ %@ attends the %@-course and has ID:[%@] REV:[%@]", self.firstName, self.lastName, self.course, self.id, self.rev);
     return YES;
 }
 

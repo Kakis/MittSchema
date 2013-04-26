@@ -74,19 +74,6 @@ static NSString * const fridayKey = @"friday_key";
     return YES;
 }
 
-//-(BOOL)addStudent:(Student *)student
-//{
-//    if([student.course isEqualToString:@"english"]){
-//        [students[englishKey] addObject:student];
-//        
-//    } else if ([student.course isEqualToString:@"math"]){
-//        [students[mathKey] addObject:student];
-//        
-//    } else {
-//        [students[appdevKey] addObject:student];
-//    }
-//    return YES;
-//}
 
 //-(id)init
 //{

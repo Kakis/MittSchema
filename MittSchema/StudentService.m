@@ -105,37 +105,6 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 }
 
 
-//#pragma mark - Load all students
-//
-//-(void)loadStudent:(Student *)student
-//{
-//    //Initierar två NSMutableData att hålla/ta emot den student vi laddar ned
-//    NSMutableData *data = [[NSMutableData alloc] init];
-//    NSMutableData *receivedData = data;
-//    
-//    // Sätter adressen vi ska hämta ifrån till min databas
-//    NSURL *url = [NSURL URLWithString:@"http://kakis.iriscouch.com/students"];
-//    
-//    // Skapar en request från vår url
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//    
-//    // Vi säger att vi vill få tillbaka json-värden med vår HTTP-förfrågan
-//    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-//    
-//    // Skapar ett response
-//    NSURLResponse *response = [[NSURLResponse alloc] init];
-//    [receivedData appendData:[NSURLConnection sendSynchronousRequest:request
-//                                                   returningResponse:response
-//                                                               error:nil]];
-//    
-//    // Skapar min NSURLConnection                         //ev ska det kanske vara delegate:nil
-//    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-//    [connection start];
-//}
-
-
-
-
 
 //-(void)getFromDatabase:(NSString *)studentId
 //          onCompletion:(AllStudentsResponse)allStudentsResponse {

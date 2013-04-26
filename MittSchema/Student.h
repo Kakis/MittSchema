@@ -20,7 +20,7 @@
             firstName:(NSString *) firstName
                course:(NSString *) course;
 
--(BOOL)logStudent;
+-(BOOL)logStudentAttributes;
 
 -(BOOL)dayAssignment;
 
