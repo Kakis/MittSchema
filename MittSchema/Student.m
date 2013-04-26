@@ -13,6 +13,7 @@
 +(id) studentFromJson:(NSDictionary *)studentAsJson
 {
     Student *student = [[self alloc] init];
+    
     student.lastName = studentAsJson[@"lastName"];
     student.firstName = studentAsJson[@"firstName"];
     student.course = studentAsJson[@"course"];
