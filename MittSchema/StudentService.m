@@ -20,7 +20,8 @@
 
 static NSString * const javaKey = @"java_key";
 static NSString * const appdevKey = @"appdev_Key";
-static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json";
+
+
 
 @implementation StudentService
 {
@@ -64,7 +65,26 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 }
 
 
-#pragma mark - Save a student
+-(NSSet*) allStudents
+{
+    //Returns a set with students from all courses
+    return [students[javaKey]setByAddingObjectsFromSet:students[appdevKey]];
+}
+
+
+
+#pragma mark - Serialize student to json
+
+-(id)serializeStudentToJson:(id) object
+{
+    NSObject *result = [[NSObject alloc] init];
+    result = [object jsonValue];
+    return result;
+}
+
+
+
+#pragma mark - Save a student to couch.db
 
 -(void) saveStudent:(Student *)student
 {
@@ -97,64 +117,35 @@ static NSString * const savedStateFileName = @"/Users/Jens/Desktop/students.json
 }
 
 
--(id)serializeStudentToJson:(id) object
+
+#pragma mark - Get a student from couch.db
+
+-(void)getStudentWithID:(NSString *)_id onCompletion:(GetStudentResponce)getStudentResponce
 {
-    NSObject *result = [[NSObject alloc] init];
-    result = [object jsonValue];
-    return result;
-}
-
-
-
-//-(void)getFromDatabase:(NSString *)studentId
-//          onCompletion:(AllStudentsResponse)allStudentsResponse {
-//
-// NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://kakis.iriscouch.com/students/%@", studentId]];
-//
-// NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-//
-// [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-//
-// [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
-//                            
-// //Parse response från Json till anpassade jobb objekt och lägger till det i en NSArray
-// NSArray *readStudents = @[data];
-//
-// // Utför blocket som skickas som ett argument. Detta kommer att "ringa tillbaka" till uppringaren (aka callback)
-// allStudentsResponse(readStudents);
-//}
-
-
-
--(NSSet*) allStudents
-{
-    //Returns a set with students from all courses
-    return [students[javaKey]setByAddingObjectsFromSet:students[appdevKey]];
+    // Vi skapar en URL-pekare och tilldelar den en sträng med url'en till min databas students på iriscouch, matchat mot en students id
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://kakis.iriscouch.com/students/%@", _id]];
+    
+    // Vi skapar en NSMutableURLRequest, allokerar minnet och initerar den med url'en vi nyss skapade
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    // Vi säger att vi vill få tillbaka json-värden med vår HTTP-förfrågan
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    // Vi vill lägga en asynhron NSURLconection på kön och köra vårt block (^GetStudentResponce) som vi definierat i h-filen
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:queue
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               
+                               // Vi serialiserar de data vi får tillbaka från json till ett student-objekt
+                               // och sätter pekaren foundStudent att peka mot detta.
+                               NSArray *foundStudent = @[data];
+                               
+                               // Vi kör det block vi skickade som argument.
+                               // Och skickar det vi får tillbaka (callback).
+                               getStudentResponce(foundStudent);
+                           }];
+    
 }
 
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

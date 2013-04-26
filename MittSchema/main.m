@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DBConnectionService.h"
 #import "StudentService.h"
 #import "Lesson.h"
 #import "Student.h"
@@ -58,37 +57,37 @@ int main(int argc, const char * argv[])
         /////////////////////////////////////// Get Students from DB /////////////////////////////////////////
         
 
-//        DBConnectionService *getStudent1 = [[DBConnectionService alloc] init];
-//        [getStudent1 getStudentWithID:@"0B8F6A43-59C0-49BC-8310-F803453A0A23" onCompletion:^(NSArray *getStudent) {
-//            
-//            for(id _id in getStudent) {
-//                NSLog(@"%@", [[NSString alloc] initWithData:_id
-//                                                   encoding:NSUTF8StringEncoding]);
-//                
-//            }
-//        }];
-//
-//        
-//        DBConnectionService *getStudent2 = [[DBConnectionService alloc] init];
-//        [getStudent2 getStudentWithID:@"BE8E3A4A-AAAC-45FB-B320-0BDF1E57437F" onCompletion:^(NSArray *getStudent) {
-//            
-//            for(id _id in getStudent) {
-//                NSLog(@"%@", [[NSString alloc] initWithData:_id
-//                                                   encoding:NSUTF8StringEncoding]);
-//                
-//            }
-//        }];
-//        
-//        
-//        DBConnectionService *getStudent3 = [[DBConnectionService alloc] init];
-//        [getStudent3 getStudentWithID:@"F0926164-4C8C-41EA-A5B4-CFECD3264CEC" onCompletion:^(NSArray *getStudent) {
-//            
-//            for(id _id in getStudent) {
-//                NSLog(@"%@", [[NSString alloc] initWithData:_id
-//                                                   encoding:NSUTF8StringEncoding]);
-//                
-//            }
-//        }];
+        StudentService *getStudent1 = [[StudentService alloc] init];
+        [getStudent1 getStudentWithID:@"0B8F6A43-59C0-49BC-8310-F803453A0A23" onCompletion:^(NSArray *getStudent) {
+            
+            for(id _id in getStudent) {
+                NSLog(@"%@", [[NSString alloc] initWithData:_id
+                                                   encoding:NSUTF8StringEncoding]);
+                
+            }
+        }];
+
+        
+        StudentService *getStudent2 = [[StudentService alloc] init];
+        [getStudent2 getStudentWithID:@"BE8E3A4A-AAAC-45FB-B320-0BDF1E57437F" onCompletion:^(NSArray *getStudent) {
+            
+            for(id _id in getStudent) {
+                NSLog(@"%@", [[NSString alloc] initWithData:_id
+                                                   encoding:NSUTF8StringEncoding]);
+                
+            }
+        }];
+        
+        
+        StudentService *getStudent3 = [[StudentService alloc] init];
+        [getStudent3 getStudentWithID:@"F0926164-4C8C-41EA-A5B4-CFECD3264CEC" onCompletion:^(NSArray *getStudent) {
+            
+            for(id _id in getStudent) {
+                NSLog(@"%@", [[NSString alloc] initWithData:_id
+                                                   encoding:NSUTF8StringEncoding]);
+                
+            }
+        }];
         
         
         
