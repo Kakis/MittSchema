@@ -68,15 +68,6 @@
 }
 
 
-//-(BOOL)addLesson:(Student *)student : (Course *)course
-//{
-//    // Om du är admin med rätt lösenord får du sätta nedanstående... INTE ANNARS
-//    if (student.course == course.courseName){
-//        self.assignment = course.assignment;
-//    }
-//    return YES;
-//}
-
 -(BOOL)writeMessage
 {
     //NSLog(@"Your %@-teacher %@ wants you to %@ until next lesson %@.", self.lessonName, self.teacher, self.assignment, self.lessonDay);

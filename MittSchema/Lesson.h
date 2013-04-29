@@ -30,8 +30,6 @@
                 endTime:(NSString *) endTime
              assignment:(NSString *) assignment;
 
-// -(BOOL)addLesson:(Student *)student : (Course *)course;
-
 -(BOOL)writeMessage;
 
 
