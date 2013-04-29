@@ -22,25 +22,24 @@ int main(int argc, const char * argv[])
         //////////////////////////////////////////// Init of Admin //////////////////////////////////////////////
         
         
-//        Admin *admin = [[Admin alloc] initWithUserName:@"admin"
-//                                              password:@"superduperhemligt"];
+        Admin *admin = [[Admin alloc] initWithUserName:@"admin"
+                                              password:@"superduperhemligt"];
         
         
         /////////////////////////////////////////// Init of Students /////////////////////////////////////////////
         
         
-//        Student *student1 = [[Student alloc] initWithLastName:@"Hagfeldt"
-//                                                    firstName:@"Jens"
-//                                                       course:@"appdev"];
-//
-//        Student *student2 = [[Student alloc] initWithLastName:@"Bergkvist"
-//                                                    firstName:@"Kristoffer"
-//                                                       course:@"appdev"];
-//        
-//        Student *student3 = [[Student alloc] initWithLastName:@"Sjöstrand"
-//                                                    firstName:@"Amelie"
-//                                                       course:@"appdev"];
+        Student *student1 = [[Student alloc] initWithLastName:@"Hagfeldt"
+                                                    firstName:@"Jens"
+                                                       course:@"appdev"];
+
+        Student *student2 = [[Student alloc] initWithLastName:@"Bergkvist"
+                                                    firstName:@"Kristoffer"
+                                                       course:@"appdev"];
         
+        Student *student3 = [[Student alloc] initWithLastName:@"Sjöstrand"
+                                                    firstName:@"Amelie"
+                                                       course:@"appdev"];
         
         
         
@@ -84,11 +83,11 @@ int main(int argc, const char * argv[])
         /////////////////////////////////////////// Add Students /////////////////////////////////////////////
         
         
-//        StudentService *students = [[StudentService alloc] init];
-//        
-//        [students addStudent:student1];
-//        [students addStudent:student2];
-//        [students addStudent:student3];
+        StudentService *students = [[StudentService alloc] init];
+        
+        [students addStudent:student1];
+        [students addStudent:student2];
+        [students addStudent:student3];
         
         
         
@@ -147,8 +146,10 @@ int main(int argc, const char * argv[])
         /////////////////////////////////////////////////  Logs //////////////////////////////////////////////////
         
 //        // Admin writing message to one student
-//        [admin messageToStudent:student2 message:@"From week 16 we will use classroom 52."];
-//        
+        [admin messageToStudent:student2 message:@"From week 16 we will use classroom 52."];
+//        [admin messageToAllStudents:students message:@"From week 16 we will use classroom 52."];
+        
+//
 //        puts("");
 //        
 //        [student1 logStudentAttributes];

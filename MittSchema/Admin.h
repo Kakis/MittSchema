@@ -21,8 +21,8 @@
 -(BOOL)messageToStudent:(Student *)student
                 message:(NSString *)message;
 
--(BOOL)messageToAllStudents:(NSDictionary *)students
-                    message:(NSString *)message;
+//-(BOOL)messageToAllStudents:(NSDictionary *)students
+//                    message:(NSString *)message;
 
 
 @end
