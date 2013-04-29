@@ -12,6 +12,8 @@
 
 @interface Lesson : NSObject
 
+@property (nonatomic, copy, readonly) NSString *id;
+@property (nonatomic, copy) NSString *rev;
 @property (nonatomic, copy) NSString *lessonName;
 @property (nonatomic, copy) NSString *classroom;
 @property (nonatomic, copy) NSString *teacher;

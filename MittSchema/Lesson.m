@@ -39,9 +39,34 @@
         self.startTime = startTime;
         self.endTime = endTime;
         self.assignment = assignment;
+        self->_id = [[NSUUID UUID] UUIDString];
+        self->_rev = [[NSUUID UUID] UUIDString];
     }
     return self;
 }
+
+-(NSUInteger)hash
+{
+    return 37 * [self.id hash];
+}
+
+
+-(BOOL)isEqual:(id)other
+{
+    // if other points to self - we are equal
+    if(other == self){
+        return YES;
+    }
+    
+    // if other is not nil AND is member of same class as we (self)
+    if(other && [other isMemberOfClass:[self class]]){
+        // comapre studentId's
+        return [[other id] isEqualToString:self.id];
+    }
+    // we are not equal
+    return NO;
+}
+
 
 //-(BOOL)addLesson:(Student *)student : (Course *)course
 //{

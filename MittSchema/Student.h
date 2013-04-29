@@ -22,7 +22,7 @@
 
 -(BOOL)logStudentAttributes;
 
--(BOOL)dayAssignment;
+//-(BOOL)dayAssignment;
 
 -(BOOL)messageFromAdmin:(NSString *)message;
 

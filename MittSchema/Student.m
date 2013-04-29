@@ -61,7 +61,8 @@
     }
     
     // if other is not nil AND is member of same class as we (self)
-    if(other && [other isMemberOfClass:[self class]]){
+    if(other && [other isMemberOfClass:[self class]])
+    {
         // comapre studentId's
         return [[other id] isEqualToString:self.id];
     }

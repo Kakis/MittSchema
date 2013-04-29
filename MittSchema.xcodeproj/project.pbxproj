@@ -26,6 +26,8 @@
 		B4B957D71712DDAE00ACA1D4 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B957D61712DDAE00ACA1D4 /* Course.m */; };
 		B4C76A521716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
 		B4C76A531716D5A3003253D2 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C76A511716D5A3003253D2 /* Admin.m */; };
+		B4D2F693172E3AE100E880CE /* Lesson+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D2F692172E3AE100E880CE /* Lesson+Json.m */; };
+		B4D2F694172E3AE100E880CE /* Lesson+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D2F692172E3AE100E880CE /* Lesson+Json.m */; };
 		B4E375FE1713FD3C0010ED97 /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E375FD1713FD3C0010ED97 /* StudentService.m */; };
 		B4E37601171421B70010ED97 /* Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E37600171421B70010ED97 /* Scheme.m */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		B4B957D61712DDAE00ACA1D4 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		B4C76A501716D5A3003253D2 /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
 		B4C76A511716D5A3003253D2 /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
+		B4D2F691172E3AE100E880CE /* Lesson+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lesson+Json.h"; sourceTree = "<group>"; };
+		B4D2F692172E3AE100E880CE /* Lesson+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lesson+Json.m"; sourceTree = "<group>"; };
 		B4E375FC1713FD3C0010ED97 /* StudentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentService.h; sourceTree = "<group>"; };
 		B4E375FD1713FD3C0010ED97 /* StudentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentService.m; sourceTree = "<group>"; };
 		B4E375FF171421B70010ED97 /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				B46FB90D171C0065009D2F1B /* Lesson.m */,
 				B423F016171EE0D10072CFA9 /* Student+Json.h */,
 				B423F017171EE0D10072CFA9 /* Student+Json.m */,
+				B4D2F691172E3AE100E880CE /* Lesson+Json.h */,
+				B4D2F692172E3AE100E880CE /* Lesson+Json.m */,
 			);
 			path = MittSchema;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				B4C76A521716D5A3003253D2 /* Admin.m in Sources */,
 				B46FB90E171C0065009D2F1B /* Lesson.m in Sources */,
 				B423F018171EE0D10072CFA9 /* Student+Json.m in Sources */,
+				B4D2F693172E3AE100E880CE /* Lesson+Json.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 				B42EAADA1720038D0093117E /* StudentService.m in Sources */,
 				B42EAADB172003950093117E /* Scheme.m in Sources */,
 				B42EAADC172003BC0093117E /* Course.m in Sources */,
+				B4D2F694172E3AE100E880CE /* Lesson+Json.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
