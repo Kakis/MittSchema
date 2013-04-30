@@ -19,11 +19,13 @@ typedef void (^GetStudentResponce)(NSArray *getStudent);
 @interface StudentService : NSObject
 
 -(id)initWithStudents:(NSArray *)studentsToAdd;
+
 -(BOOL)addStudent:(Student *)student;
 
 -(id)serializeStudentToJson:(id) object;
 
 -(void) saveStudent:(Student *)student;
+
 -(void) getStudentWithID:(NSString*)_id onCompletion:(GetStudentResponce) getStudentResponce;
 
 

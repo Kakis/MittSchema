@@ -15,7 +15,7 @@
 
 #import "StudentService.h"
 #import "Student+Json.h"
-#import "Student.h"
+
 
 
 static NSString * const javaKey = @"java_key";
